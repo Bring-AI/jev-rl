@@ -5,7 +5,7 @@
   const controller = new AbortController();
   const timeout = setTimeout(() => controller.abort(), 6000);
   try {
-    const response = await fetch("https://api.github.com/repos/Bring-AI/jev-rl-reward", {
+    const response = await fetch("https://api.github.com/repos/Bring-AI/jev-rl", {
       headers: { Accept: "application/vnd.github+json" },
       signal: controller.signal,
       credentials: "omit",

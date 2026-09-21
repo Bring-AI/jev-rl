@@ -4,7 +4,7 @@
 
 [![Website: jevrl.com](assets/website-badge.svg)](https://jevrl.com/)
 
-**Let JEV judge. Let the agent learn.**
+**JEV Reinforcement Learning** · Let JEV judge. Let the agent learn.
 
 A runnable reward-model laboratory: **CartPole, MountainCar, Acrobot, and
 FrozenLake**, with neural DQN agents, official JEV scores, and saved game replays.
@@ -85,8 +85,8 @@ JEV weights or claim the hosted JEV model is open source.
 Python 3.10+ and [uv](https://docs.astral.sh/uv/) are sufficient. No GPU, Node.js or key needed.
 
 ```bash
-git clone https://github.com/Bring-AI/jev-rl-reward.git
-cd jev-rl-reward
+git clone https://github.com/Bring-AI/jev-rl.git
+cd jev-rl
 uv sync --python 3.12 --extra classic
 uv run --extra classic jev-arcade serve
 ```

@@ -2,7 +2,7 @@
 
 [![Website: jevrl.com](assets/website-badge.svg)](https://jevrl.com/)
 
-**让 JEV 当裁判，让强化学习智能体学会玩游戏。**
+**JEV Reinforcement Learning** · 让 JEV 当裁判，让强化学习智能体学会玩游戏。
 
 [English](README.md) · [MIT 开源协议](LICENSE)
 
@@ -54,8 +54,8 @@ JEV 对每次状态变化评分，评分转换成奖励，Q-learning 据此学�
 安装 [uv](https://docs.astral.sh/uv/) 后：
 
 ```bash
-git clone https://github.com/Bring-AI/jev-rl-reward.git
-cd jev-rl-reward
+git clone https://github.com/Bring-AI/jev-rl.git
+cd jev-rl
 uv sync --python 3.12 --extra classic
 uv run --extra classic jev-arcade serve
 ```
