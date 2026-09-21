@@ -3,6 +3,7 @@
 # JevRL
 
 [![Website: jevrl.com](assets/website-badge.svg)](https://jevrl.com/)
+[![Blog: Read the research](assets/blog-badge.svg)](https://bringai.io/blog/jevrl)
 
 **JEV Reinforcement Learning** · Let JEV judge. Let the agent learn.
 

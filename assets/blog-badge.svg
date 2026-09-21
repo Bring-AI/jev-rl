@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="218" height="30" viewBox="0 0 218 30" role="img" aria-label="Blog: Read the research">
+  <title>Read the JevRL research article on BringAI</title>
+  <clipPath id="round"><rect width="218" height="30" rx="6"/></clipPath>
+  <g clip-path="url(#round)"><path fill="#172820" d="M0 0h68v30H0z"/><path fill="#267c56" d="M68 0h150v30H68z"/></g>
+  <g fill="none" stroke="#c8ed81" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><rect x="10" y="7" width="12" height="16" rx="2"/><path d="M13 11h6m-6 4h6m-6 4h4"/></g>
+  <g fill="#fff" font-family="Arial,Helvetica,sans-serif" font-size="12"><text x="32" y="19">Blog</text><text x="81" y="19" font-weight="600">Read the research ↗</text></g>
+</svg>

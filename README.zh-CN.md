@@ -1,6 +1,7 @@
 # JevRL
 
 [![Website: jevrl.com](assets/website-badge.svg)](https://jevrl.com/)
+[![博客：阅读研究文章](assets/blog-badge.svg)](https://bringai.io/blog/jevrl)
 
 **JEV Reinforcement Learning** · 让 JEV 当裁判，让强化学习智能体学会玩游戏。
 
