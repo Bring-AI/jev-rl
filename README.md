@@ -16,6 +16,12 @@ FrozenLake**, with neural DQN agents, official JEV scores, and saved game replay
 
 **36 training runs · 3 seeds · 3 reward conditions · 3.24 million environment steps.**
 
+**Recorded JEV API cost: ≈ $0.00241 (0.24 US cents).**
+
+129 judgments, cached and reused across **12 JEV training runs / 1.08 million steps**.
+This is the cost of building the four-game score cache; training compute and
+development/diagnostic calls are excluded. [Cost records](experiments/jevrl-v1/judgments)
+
 [Experiment records](experiments/jevrl-v1)
 
 </div>
@@ -131,7 +137,9 @@ These are policy/optimizer snapshots; the replay buffer is not saved for exact
 training continuation. Existing completed output directories are never overwritten.
 
 The score cache contains **129 retained answers**, with recorded construction cost
-**$0.002409918**; this excludes development diagnostics. All 1.08 million JEV-reward
+**$0.002409918**; this excludes training compute and development/diagnostic calls.
+Reusing the frozen cache incurs no additional JEV API requests; live scoring of
+uncached inputs does. All 1.08 million JEV-reward
 steps in the main experiment reuse those answers. Native rewards never enter JEV
 updates. The paper reports rubric disagreement, weak native baselines, and seed
 variation explicitly. DQN's optimization loss is not a win-rate metric.

@@ -31,6 +31,12 @@
 使用 DQN 神经网络策略；原来的 Key Quest 也保留。
 
 **36 组训练、3 个随机种子、3 种奖励条件，共 324 万环境步。**
+
+**JEV API 实录成本：约 $0.00241（0.24 美分）。**
+
+129 次评分构建缓存，供 **12 组 JEV 训练、108 万环境步**复用。
+这是四游戏评分缓存的 API 成本，不含训练算力和开发诊断请求。[费用记录](experiments/jevrl-v1/judgments)
+
 [实验原始指标](experiments/jevrl-v1)
 
 | 游戏 | JEV 最终成功率（均值 ± 种子间标准差） | 每组训练步数 |
@@ -72,7 +78,8 @@ uv run --extra classic python scripts/classic_benchmark.py run --output runs/jev
 uv run --extra classic python scripts/export_classic.py
 ```
 
-正式实验使用 129 条冻结的官方评分，记录的构建成本约 $0.00241（不含开发诊断请求）。
+正式实验使用 129 条冻结的官方评分，记录的构建成本约 $0.00241（不含训练算力和开发诊断请求）。
+复用冻结缓存不会增加 JEV API 请求；使用 live 模式对未缓存的输入评分会产生新的 API 费用。
 JEV 模式的 108 万训练步全部复用这些评分，没有混入环境原生奖励。
 训练 reward、原生得分、成功率分开显示；这里不用监督学习的 test loss 衡量输赢。
 
