@@ -1,0 +1,6 @@
+assets/*.svg linguist-generated=true
+src/jev_reward/static/*.json linguist-generated=true
+src/jev_reward/static/classic/data/*.json linguist-generated=true
+src/jev_reward/static/classic/scores/*.json linguist-generated=true
+src/jev_reward/static/classic/manifest.json linguist-generated=true
+experiments/jevrl-v1/**/*.json linguist-generated=true

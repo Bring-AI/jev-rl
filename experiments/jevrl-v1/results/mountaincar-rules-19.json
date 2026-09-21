@@ -1,0 +1,8099 @@
+{
+  "schema_version": 1,
+  "suite": "classic",
+  "status": "completed",
+  "error": null,
+  "task": {
+    "slug": "mountaincar",
+    "name": "MountainCar",
+    "env_id": "MountainCar-v0",
+    "horizon": 200,
+    "steps": 120000,
+    "objective": "Build momentum and reach the flag on the right hill.",
+    "success_definition": "Reach position >= 0.5 within 200 steps.",
+    "actions": [
+      "Left",
+      "Coast",
+      "Right"
+    ]
+  },
+  "provider": "rules",
+  "config": {
+    "task": "mountaincar",
+    "provider": "rules",
+    "seed": 19,
+    "total_steps": 120000,
+    "checkpoint_steps": 10000,
+    "eval_episodes": 20,
+    "test_episodes": 100,
+    "max_calls": 2000,
+    "cache_path": null,
+    "frozen_cache": false,
+    "learning_rate": 0.001,
+    "gamma": 0.99,
+    "batch_size": 64,
+    "learning_starts": 1000,
+    "buffer_size": 50000,
+    "train_freq": 4,
+    "target_update_interval": 1000,
+    "exploration_fraction": 0.5,
+    "exploration_final_eps": 0.05
+  },
+  "algorithm": "Stable-Baselines3 DQN, MLP(64,64)",
+  "steps": 120000,
+  "history": [
+    {
+      "episode": 1,
+      "steps": 200,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": -0.779999976977706,
+      "success": false,
+      "epsilon": 0.9968491666666667
+    },
+    {
+      "episode": 2,
+      "steps": 400,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": -1.1599999740719795,
+      "success": false,
+      "epsilon": 0.9936824999999999
+    },
+    {
+      "episode": 3,
+      "steps": 600,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": -0.9499999787658453,
+      "success": false,
+      "epsilon": 0.9905158333333335
+    },
+    {
+      "episode": 4,
+      "steps": 800,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": -1.3499999698251486,
+      "success": false,
+      "epsilon": 0.9873491666666667
+    },
+    {
+      "episode": 5,
+      "steps": 1000,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": -1.029999976977706,
+      "success": false,
+      "epsilon": 0.9841825
+    },
+    {
+      "episode": 6,
+      "steps": 1200,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": -0.42999999038875103,
+      "success": false,
+      "epsilon": 0.9810158333333334
+    },
+    {
+      "episode": 7,
+      "steps": 1400,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": -0.669999985024333,
+      "success": false,
+      "epsilon": 0.9778491666666667
+    },
+    {
+      "episode": 8,
+      "steps": 1600,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": -0.5299999732524157,
+      "success": false,
+      "epsilon": 0.9746824999999999
+    },
+    {
+      "episode": 9,
+      "steps": 1800,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": -0.9399999789893627,
+      "success": false,
+      "epsilon": 0.9715158333333334
+    },
+    {
+      "episode": 10,
+      "steps": 2000,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": -1.219999972730875,
+      "success": false,
+      "epsilon": 0.9683491666666667
+    },
+    {
+      "episode": 11,
+      "steps": 2200,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": -0.31999998167157173,
+      "success": false,
+      "epsilon": 0.9651824999999999
+    },
+    {
+      "episode": 12,
+      "steps": 2400,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": -0.8299999814480543,
+      "success": false,
+      "epsilon": 0.9620158333333334
+    },
+    {
+      "episode": 13,
+      "steps": 2600,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": -0.9899999778717756,
+      "success": false,
+      "epsilon": 0.9588491666666666
+    },
+    {
+      "episode": 14,
+      "steps": 2800,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": -0.7399999834597111,
+      "success": false,
+      "epsilon": 0.9556824999999999
+    },
+    {
+      "episode": 15,
+      "steps": 3000,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": -0.4899999890476465,
+      "success": false,
+      "epsilon": 0.9525158333333335
+    },
+    {
+      "episode": 16,
+      "steps": 3200,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": -0.6799999848008156,
+      "success": false,
+      "epsilon": 0.9493491666666667
+    },
+    {
+      "episode": 17,
+      "steps": 3400,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": -1.2799999713897705,
+      "success": false,
+      "epsilon": 0.9461824999999999
+    },
+    {
+      "episode": 18,
+      "steps": 3600,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": -1.4199999682605267,
+      "success": false,
+      "epsilon": 0.9430158333333334
+    },
+    {
+      "episode": 19,
+      "steps": 3800,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": -1.4499999675899744,
+      "success": false,
+      "epsilon": 0.9398491666666666
+    },
+    {
+      "episode": 20,
+      "steps": 4000,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": -1.2099999729543924,
+      "success": false,
+      "epsilon": 0.9366824999999999
+    },
+    {
+      "episode": 21,
+      "steps": 4200,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": -0.8299999814480543,
+      "success": false,
+      "epsilon": 0.9335158333333333
+    },
+    {
+      "episode": 22,
+      "steps": 4400,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": -0.6899999752640724,
+      "success": false,
+      "epsilon": 0.9303491666666667
+    },
+    {
+      "episode": 23,
+      "steps": 4600,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": -0.9299999792128801,
+      "success": false,
+      "epsilon": 0.9271825000000001
+    },
+    {
+      "episode": 24,
+      "steps": 4800,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": -0.2999999802559614,
+      "success": false,
+      "epsilon": 0.9240158333333334
+    },
+    {
+      "episode": 25,
+      "steps": 5000,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": -1.389999968931079,
+      "success": false,
+      "epsilon": 0.9208491666666666
+    },
+    {
+      "episode": 26,
+      "steps": 5200,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": -0.4999999888241291,
+      "success": false,
+      "epsilon": 0.9176824999999998
+    },
+    {
+      "episode": 27,
+      "steps": 5400,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": -0.4099999852478504,
+      "success": false,
+      "epsilon": 0.9145158333333334
+    },
+    {
+      "episode": 28,
+      "steps": 5600,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": -0.4799999576061964,
+      "success": false,
+      "epsilon": 0.9113491666666667
+    },
+    {
+      "episode": 29,
+      "steps": 5800,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": -0.02999996580183506,
+      "success": false,
+      "epsilon": 0.9081825000000001
+    },
+    {
+      "episode": 30,
+      "steps": 6000,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": -1.0499999765306711,
+      "success": false,
+      "epsilon": 0.9050158333333334
+    },
+    {
+      "episode": 31,
+      "steps": 6200,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": -0.36999998055398464,
+      "success": false,
+      "epsilon": 0.9018491666666666
+    },
+    {
+      "episode": 32,
+      "steps": 6400,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": -0.23999998718500137,
+      "success": false,
+      "epsilon": 0.8986825
+    },
+    {
+      "episode": 33,
+      "steps": 6600,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": -0.8199999760836363,
+      "success": false,
+      "epsilon": 0.8955158333333333
+    },
+    {
+      "episode": 34,
+      "steps": 6800,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": -0.09999997541308403,
+      "success": false,
+      "epsilon": 0.8923491666666666
+    },
+    {
+      "episode": 35,
+      "steps": 7000,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": -0.9999999776482582,
+      "success": false,
+      "epsilon": 0.8891825000000001
+    },
+    {
+      "episode": 36,
+      "steps": 7200,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": -0.6499999817460775,
+      "success": false,
+      "epsilon": 0.8860158333333333
+    },
+    {
+      "episode": 37,
+      "steps": 7400,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 0.09000001847743988,
+      "success": false,
+      "epsilon": 0.8828491666666666
+    },
+    {
+      "episode": 38,
+      "steps": 7600,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": -0.9299999792128801,
+      "success": false,
+      "epsilon": 0.8796825
+    },
+    {
+      "episode": 39,
+      "steps": 7800,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": -0.2999999802559614,
+      "success": false,
+      "epsilon": 0.8765158333333334
+    },
+    {
+      "episode": 40,
+      "steps": 8000,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": -0.7699999827891588,
+      "success": false,
+      "epsilon": 0.8733491666666666
+    },
+    {
+      "episode": 41,
+      "steps": 8200,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": -0.029999976977705956,
+      "success": false,
+      "epsilon": 0.8701825000000001
+    },
+    {
+      "episode": 42,
+      "steps": 8400,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 0.22000003792345524,
+      "success": false,
+      "epsilon": 0.8670158333333333
+    },
+    {
+      "episode": 43,
+      "steps": 8600,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 0.13000003062188625,
+      "success": false,
+      "epsilon": 0.8638491666666666
+    },
+    {
+      "episode": 44,
+      "steps": 8800,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": -1.0199999772012234,
+      "success": false,
+      "epsilon": 0.8606825
+    },
+    {
+      "episode": 45,
+      "steps": 9000,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": -1.0599999763071537,
+      "success": false,
+      "epsilon": 0.8575158333333333
+    },
+    {
+      "episode": 46,
+      "steps": 9200,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 0.01000002957880497,
+      "success": false,
+      "epsilon": 0.8543491666666668
+    },
+    {
+      "episode": 47,
+      "steps": 9400,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": -0.7999999821186066,
+      "success": false,
+      "epsilon": 0.8511825000000001
+    },
+    {
+      "episode": 48,
+      "steps": 9600,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": -0.2999999839812517,
+      "success": false,
+      "epsilon": 0.8480158333333333
+    },
+    {
+      "episode": 49,
+      "steps": 9800,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": -0.8499999810010195,
+      "success": false,
+      "epsilon": 0.8448491666666665
+    },
+    {
+      "episode": 50,
+      "steps": 10000,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": -0.6299999728798866,
+      "success": false,
+      "epsilon": 0.8416825
+    },
+    {
+      "episode": 51,
+      "steps": 10200,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": -0.0899999849498272,
+      "success": false,
+      "epsilon": 0.8385158333333333
+    },
+    {
+      "episode": 52,
+      "steps": 10400,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": -0.09999996796250343,
+      "success": false,
+      "epsilon": 0.8353491666666668
+    },
+    {
+      "episode": 53,
+      "steps": 10600,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": -0.6499999836087227,
+      "success": false,
+      "epsilon": 0.8321825
+    },
+    {
+      "episode": 54,
+      "steps": 10800,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": -0.6199999488890171,
+      "success": false,
+      "epsilon": 0.8290158333333333
+    },
+    {
+      "episode": 55,
+      "steps": 11000,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": -0.47999998927116394,
+      "success": false,
+      "epsilon": 0.8258491666666667
+    },
+    {
+      "episode": 56,
+      "steps": 11200,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 0.22000004351139069,
+      "success": false,
+      "epsilon": 0.8226825
+    },
+    {
+      "episode": 57,
+      "steps": 11400,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 1.210000054910779,
+      "success": false,
+      "epsilon": 0.8195158333333332
+    },
+    {
+      "episode": 58,
+      "steps": 11600,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": -0.4099999815225601,
+      "success": false,
+      "epsilon": 0.8163491666666668
+    },
+    {
+      "episode": 59,
+      "steps": 11800,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 0.020000027492642403,
+      "success": false,
+      "epsilon": 0.8131825
+    },
+    {
+      "episode": 60,
+      "steps": 12000,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": -0.21999997273087502,
+      "success": false,
+      "epsilon": 0.8100158333333333
+    },
+    {
+      "episode": 61,
+      "steps": 12200,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": -0.039999959990382195,
+      "success": false,
+      "epsilon": 0.8068491666666667
+    },
+    {
+      "episode": 62,
+      "steps": 12400,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 0.3800000324845314,
+      "success": false,
+      "epsilon": 0.8036825000000001
+    },
+    {
+      "episode": 63,
+      "steps": 12600,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 0.1500000525265932,
+      "success": false,
+      "epsilon": 0.8005158333333333
+    },
+    {
+      "episode": 64,
+      "steps": 12800,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 0.5400000344961882,
+      "success": false,
+      "epsilon": 0.7973491666666668
+    },
+    {
+      "episode": 65,
+      "steps": 13000,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 0.1300000287592411,
+      "success": false,
+      "epsilon": 0.7941825
+    },
+    {
+      "episode": 66,
+      "steps": 13200,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 0.12000002339482307,
+      "success": false,
+      "epsilon": 0.7910158333333333
+    },
+    {
+      "episode": 67,
+      "steps": 13400,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 0.43000002577900887,
+      "success": false,
+      "epsilon": 0.7878491666666667
+    },
+    {
+      "episode": 68,
+      "steps": 13600,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 0.11000003851950169,
+      "success": false,
+      "epsilon": 0.7846825
+    },
+    {
+      "episode": 69,
+      "steps": 13800,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 0.9200000464916229,
+      "success": false,
+      "epsilon": 0.7815158333333332
+    },
+    {
+      "episode": 70,
+      "steps": 14000,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 0.1300000436604023,
+      "success": false,
+      "epsilon": 0.7783491666666668
+    },
+    {
+      "episode": 71,
+      "steps": 14200,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 0.3600000571459532,
+      "success": false,
+      "epsilon": 0.7751825
+    },
+    {
+      "episode": 72,
+      "steps": 14400,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 0.7600000277161598,
+      "success": false,
+      "epsilon": 0.7720158333333332
+    },
+    {
+      "episode": 73,
+      "steps": 14600,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 0.670000072568655,
+      "success": false,
+      "epsilon": 0.7688491666666667
+    },
+    {
+      "episode": 74,
+      "steps": 14800,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 0.4000000189989805,
+      "success": false,
+      "epsilon": 0.7656825
+    },
+    {
+      "episode": 75,
+      "steps": 15000,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": -0.04999997094273567,
+      "success": false,
+      "epsilon": 0.7625158333333335
+    },
+    {
+      "episode": 76,
+      "steps": 15200,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 0.23000002838671207,
+      "success": false,
+      "epsilon": 0.7593491666666667
+    },
+    {
+      "episode": 77,
+      "steps": 15400,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": -0.4499999862164259,
+      "success": false,
+      "epsilon": 0.7561825
+    },
+    {
+      "episode": 78,
+      "steps": 15600,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 1.240000071004033,
+      "success": false,
+      "epsilon": 0.7530158333333332
+    },
+    {
+      "episode": 79,
+      "steps": 15800,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 0.3600000590085983,
+      "success": false,
+      "epsilon": 0.7498491666666667
+    },
+    {
+      "episode": 80,
+      "steps": 16000,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 0.4500000346451998,
+      "success": false,
+      "epsilon": 0.7466824999999999
+    },
+    {
+      "episode": 81,
+      "steps": 16200,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 0.40000005438923836,
+      "success": false,
+      "epsilon": 0.7435158333333334
+    },
+    {
+      "episode": 82,
+      "steps": 16400,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 0.520000021904707,
+      "success": false,
+      "epsilon": 0.7403491666666666
+    },
+    {
+      "episode": 83,
+      "steps": 16600,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 0.440000057220459,
+      "success": false,
+      "epsilon": 0.7371825
+    },
+    {
+      "episode": 84,
+      "steps": 16800,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 0.44000004045665264,
+      "success": false,
+      "epsilon": 0.7340158333333334
+    },
+    {
+      "episode": 85,
+      "steps": 17000,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 0.8300000485032797,
+      "success": false,
+      "epsilon": 0.7308491666666667
+    },
+    {
+      "episode": 86,
+      "steps": 17200,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 1.0300000328570604,
+      "success": false,
+      "epsilon": 0.7276825
+    },
+    {
+      "episode": 87,
+      "steps": 17400,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 0.8200000375509262,
+      "success": false,
+      "epsilon": 0.7245158333333335
+    },
+    {
+      "episode": 88,
+      "steps": 17600,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 0.48000005818903446,
+      "success": false,
+      "epsilon": 0.7213491666666667
+    },
+    {
+      "episode": 89,
+      "steps": 17800,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 1.680000053718686,
+      "success": false,
+      "epsilon": 0.7181825
+    },
+    {
+      "episode": 90,
+      "steps": 18000,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 0.44000007025897503,
+      "success": false,
+      "epsilon": 0.7150158333333334
+    },
+    {
+      "episode": 91,
+      "steps": 18200,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 4.0978193283081055e-08,
+      "success": false,
+      "epsilon": 0.7118491666666666
+    },
+    {
+      "episode": 92,
+      "steps": 18400,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 1.2400000523775816,
+      "success": false,
+      "epsilon": 0.7086825000000001
+    },
+    {
+      "episode": 93,
+      "steps": 18600,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 0.5500000547617674,
+      "success": false,
+      "epsilon": 0.7055158333333333
+    },
+    {
+      "episode": 94,
+      "steps": 18800,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 0.8700000289827585,
+      "success": false,
+      "epsilon": 0.7023491666666666
+    },
+    {
+      "episode": 95,
+      "steps": 19000,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 0.10000002197921276,
+      "success": false,
+      "epsilon": 0.6991824999999999
+    },
+    {
+      "episode": 96,
+      "steps": 19200,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 0.7400000356137753,
+      "success": false,
+      "epsilon": 0.6960158333333334
+    },
+    {
+      "episode": 97,
+      "steps": 19400,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 0.7800000607967377,
+      "success": false,
+      "epsilon": 0.6928491666666666
+    },
+    {
+      "episode": 98,
+      "steps": 19600,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 0.5300000719726086,
+      "success": false,
+      "epsilon": 0.6896825000000002
+    },
+    {
+      "episode": 99,
+      "steps": 19774,
+      "length": 174,
+      "native_return": -174.0,
+      "reward_return": 2.5700000505894423,
+      "success": true,
+      "epsilon": 0.6869275
+    },
+    {
+      "episode": 100,
+      "steps": 19974,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 0.8200000412762165,
+      "success": false,
+      "epsilon": 0.6837608333333335
+    },
+    {
+      "episode": 101,
+      "steps": 20174,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 1.0000000465661287,
+      "success": false,
+      "epsilon": 0.6805941666666667
+    },
+    {
+      "episode": 102,
+      "steps": 20374,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 0.3200000375509262,
+      "success": false,
+      "epsilon": 0.6774275000000001
+    },
+    {
+      "episode": 103,
+      "steps": 20574,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 1.4200000707060099,
+      "success": false,
+      "epsilon": 0.6742608333333333
+    },
+    {
+      "episode": 104,
+      "steps": 20774,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 0.9400000479072332,
+      "success": false,
+      "epsilon": 0.6710941666666668
+    },
+    {
+      "episode": 105,
+      "steps": 20974,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 0.9100000523030758,
+      "success": false,
+      "epsilon": 0.6679275
+    },
+    {
+      "episode": 106,
+      "steps": 21174,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 1.2000000458210707,
+      "success": false,
+      "epsilon": 0.6647608333333335
+    },
+    {
+      "episode": 107,
+      "steps": 21374,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 0.8900000564754009,
+      "success": false,
+      "epsilon": 0.6615941666666667
+    },
+    {
+      "episode": 108,
+      "steps": 21574,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 0.49000005796551704,
+      "success": false,
+      "epsilon": 0.6584274999999999
+    },
+    {
+      "episode": 109,
+      "steps": 21774,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 1.6500000450760126,
+      "success": false,
+      "epsilon": 0.6552608333333332
+    },
+    {
+      "episode": 110,
+      "steps": 21974,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 0.5100000519305468,
+      "success": false,
+      "epsilon": 0.6520941666666666
+    },
+    {
+      "episode": 111,
+      "steps": 22174,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 0.83000005222857,
+      "success": false,
+      "epsilon": 0.6489275
+    },
+    {
+      "episode": 112,
+      "steps": 22374,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 1.2300000544637442,
+      "success": false,
+      "epsilon": 0.6457608333333335
+    },
+    {
+      "episode": 113,
+      "steps": 22574,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 1.5300000663846731,
+      "success": false,
+      "epsilon": 0.6425941666666667
+    },
+    {
+      "episode": 114,
+      "steps": 22774,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 1.0300000663846731,
+      "success": false,
+      "epsilon": 0.6394275
+    },
+    {
+      "episode": 115,
+      "steps": 22974,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 0.9300000574439764,
+      "success": false,
+      "epsilon": 0.6362608333333333
+    },
+    {
+      "episode": 116,
+      "steps": 23174,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 0.38000005669891834,
+      "success": false,
+      "epsilon": 0.6330941666666667
+    },
+    {
+      "episode": 117,
+      "steps": 23374,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 1.6800000611692667,
+      "success": false,
+      "epsilon": 0.6299275
+    },
+    {
+      "episode": 118,
+      "steps": 23574,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 0.7600000537931919,
+      "success": false,
+      "epsilon": 0.6267608333333334
+    },
+    {
+      "episode": 119,
+      "steps": 23774,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 1.0400000903755426,
+      "success": false,
+      "epsilon": 0.6235941666666667
+    },
+    {
+      "episode": 120,
+      "steps": 23974,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": -0.19999994151294231,
+      "success": false,
+      "epsilon": 0.6204274999999999
+    },
+    {
+      "episode": 121,
+      "steps": 24174,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 0.9900000561028719,
+      "success": false,
+      "epsilon": 0.6172608333333334
+    },
+    {
+      "episode": 122,
+      "steps": 24374,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 0.8500000219792128,
+      "success": false,
+      "epsilon": 0.6140941666666666
+    },
+    {
+      "episode": 123,
+      "steps": 24574,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 1.2200000658631325,
+      "success": false,
+      "epsilon": 0.6109275
+    },
+    {
+      "episode": 124,
+      "steps": 24774,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 1.3400000762194395,
+      "success": false,
+      "epsilon": 0.6077608333333334
+    },
+    {
+      "episode": 125,
+      "steps": 24974,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 1.5600000862032175,
+      "success": false,
+      "epsilon": 0.6045941666666667
+    },
+    {
+      "episode": 126,
+      "steps": 25174,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 1.8800000436604023,
+      "success": false,
+      "epsilon": 0.6014275
+    },
+    {
+      "episode": 127,
+      "steps": 25374,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 1.3900000359863043,
+      "success": false,
+      "epsilon": 0.5982608333333335
+    },
+    {
+      "episode": 128,
+      "steps": 25574,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 1.4000000562518835,
+      "success": false,
+      "epsilon": 0.5950941666666667
+    },
+    {
+      "episode": 129,
+      "steps": 25774,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 1.260000053793192,
+      "success": false,
+      "epsilon": 0.5919275000000002
+    },
+    {
+      "episode": 130,
+      "steps": 25974,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 1.3700000550597906,
+      "success": false,
+      "epsilon": 0.5887608333333334
+    },
+    {
+      "episode": 131,
+      "steps": 26174,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 1.2500000577419996,
+      "success": false,
+      "epsilon": 0.5855941666666666
+    },
+    {
+      "episode": 132,
+      "steps": 26374,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 1.8200000580400229,
+      "success": false,
+      "epsilon": 0.5824274999999999
+    },
+    {
+      "episode": 133,
+      "steps": 26574,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 1.9400000646710396,
+      "success": false,
+      "epsilon": 0.5792608333333333
+    },
+    {
+      "episode": 134,
+      "steps": 26774,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 1.2100000735372305,
+      "success": false,
+      "epsilon": 0.5760941666666666
+    },
+    {
+      "episode": 135,
+      "steps": 26974,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 1.9200000315904617,
+      "success": false,
+      "epsilon": 0.5729275000000001
+    },
+    {
+      "episode": 136,
+      "steps": 27174,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 0.9100000560283661,
+      "success": false,
+      "epsilon": 0.5697608333333334
+    },
+    {
+      "episode": 137,
+      "steps": 27374,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 1.0400000549852848,
+      "success": false,
+      "epsilon": 0.5665941666666666
+    },
+    {
+      "episode": 138,
+      "steps": 27574,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 1.660000054165721,
+      "success": false,
+      "epsilon": 0.5634275
+    },
+    {
+      "episode": 139,
+      "steps": 27774,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 1.050000062212348,
+      "success": false,
+      "epsilon": 0.5602608333333334
+    },
+    {
+      "episode": 140,
+      "steps": 27974,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 1.2000000476837158,
+      "success": false,
+      "epsilon": 0.5570941666666667
+    },
+    {
+      "episode": 141,
+      "steps": 28174,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 1.5400000605732203,
+      "success": false,
+      "epsilon": 0.5539275000000001
+    },
+    {
+      "episode": 142,
+      "steps": 28349,
+      "length": 175,
+      "native_return": -175.0,
+      "reward_return": 2.5700000766664743,
+      "success": true,
+      "epsilon": 0.5511566666666667
+    },
+    {
+      "episode": 143,
+      "steps": 28549,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 1.4800000824034214,
+      "success": false,
+      "epsilon": 0.54799
+    },
+    {
+      "episode": 144,
+      "steps": 28749,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 1.630000066012144,
+      "success": false,
+      "epsilon": 0.5448233333333332
+    },
+    {
+      "episode": 145,
+      "steps": 28949,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 2.100000064820051,
+      "success": false,
+      "epsilon": 0.5416566666666667
+    },
+    {
+      "episode": 146,
+      "steps": 29149,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 1.2500000577419996,
+      "success": false,
+      "epsilon": 0.53849
+    },
+    {
+      "episode": 147,
+      "steps": 29335,
+      "length": 186,
+      "native_return": -186.0,
+      "reward_return": 3.630000062286854,
+      "success": true,
+      "epsilon": 0.5355449999999999
+    },
+    {
+      "episode": 148,
+      "steps": 29535,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 1.1700000576674938,
+      "success": false,
+      "epsilon": 0.5323783333333334
+    },
+    {
+      "episode": 149,
+      "steps": 29735,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 1.8800000753253698,
+      "success": false,
+      "epsilon": 0.5292116666666666
+    },
+    {
+      "episode": 150,
+      "steps": 29935,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 1.890000056475401,
+      "success": false,
+      "epsilon": 0.5260450000000001
+    },
+    {
+      "episode": 151,
+      "steps": 30131,
+      "length": 196,
+      "native_return": -196.0,
+      "reward_return": 2.910000080242753,
+      "success": true,
+      "epsilon": 0.5229416666666666
+    },
+    {
+      "episode": 152,
+      "steps": 30331,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 1.5000000540167093,
+      "success": false,
+      "epsilon": 0.519775
+    },
+    {
+      "episode": 153,
+      "steps": 30531,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 1.2700000405311584,
+      "success": false,
+      "epsilon": 0.5166083333333332
+    },
+    {
+      "episode": 154,
+      "steps": 30731,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 1.180000064894557,
+      "success": false,
+      "epsilon": 0.5134416666666667
+    },
+    {
+      "episode": 155,
+      "steps": 30931,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 1.8800000417977571,
+      "success": false,
+      "epsilon": 0.5102750000000001
+    },
+    {
+      "episode": 156,
+      "steps": 31131,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 1.7500000540167093,
+      "success": false,
+      "epsilon": 0.5071083333333335
+    },
+    {
+      "episode": 157,
+      "steps": 31331,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 2.010000053793192,
+      "success": false,
+      "epsilon": 0.5039416666666667
+    },
+    {
+      "episode": 158,
+      "steps": 31531,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 1.8400000780820847,
+      "success": false,
+      "epsilon": 0.500775
+    },
+    {
+      "episode": 159,
+      "steps": 31731,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 1.8600000645965338,
+      "success": false,
+      "epsilon": 0.4976083333333332
+    },
+    {
+      "episode": 160,
+      "steps": 31927,
+      "length": 196,
+      "native_return": -196.0,
+      "reward_return": 3.1000000666826963,
+      "success": true,
+      "epsilon": 0.494505
+    },
+    {
+      "episode": 161,
+      "steps": 32127,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 1.8700000755488873,
+      "success": false,
+      "epsilon": 0.49133833333333343
+    },
+    {
+      "episode": 162,
+      "steps": 32291,
+      "length": 164,
+      "native_return": -164.0,
+      "reward_return": 2.420000061392784,
+      "success": true,
+      "epsilon": 0.48874166666666663
+    },
+    {
+      "episode": 163,
+      "steps": 32485,
+      "length": 194,
+      "native_return": -194.0,
+      "reward_return": 2.9200000539422035,
+      "success": true,
+      "epsilon": 0.48567000000000016
+    },
+    {
+      "episode": 164,
+      "steps": 32685,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 1.880000064149499,
+      "success": false,
+      "epsilon": 0.4825033333333334
+    },
+    {
+      "episode": 165,
+      "steps": 32877,
+      "length": 192,
+      "native_return": -192.0,
+      "reward_return": 4.3100000731647015,
+      "success": true,
+      "epsilon": 0.47946333333333335
+    },
+    {
+      "episode": 166,
+      "steps": 33077,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 1.3900000546127558,
+      "success": false,
+      "epsilon": 0.4762966666666666
+    },
+    {
+      "episode": 167,
+      "steps": 33277,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 2.510000053793192,
+      "success": false,
+      "epsilon": 0.47313000000000005
+    },
+    {
+      "episode": 168,
+      "steps": 33467,
+      "length": 190,
+      "native_return": -190.0,
+      "reward_return": 4.020000064745545,
+      "success": true,
+      "epsilon": 0.47012166666666666
+    },
+    {
+      "episode": 169,
+      "steps": 33667,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 3.3900000527501106,
+      "success": false,
+      "epsilon": 0.4669549999999999
+    },
+    {
+      "episode": 170,
+      "steps": 33867,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 2.6500000562518835,
+      "success": false,
+      "epsilon": 0.46378833333333336
+    },
+    {
+      "episode": 171,
+      "steps": 34067,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 1.7000000700354576,
+      "success": false,
+      "epsilon": 0.4606216666666668
+    },
+    {
+      "episode": 172,
+      "steps": 34267,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 1.8900000732392073,
+      "success": false,
+      "epsilon": 0.45745500000000006
+    },
+    {
+      "episode": 173,
+      "steps": 34433,
+      "length": 166,
+      "native_return": -166.0,
+      "reward_return": 3.3400000631809235,
+      "success": true,
+      "epsilon": 0.4548266666666668
+    },
+    {
+      "episode": 174,
+      "steps": 34633,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 1.8300000727176666,
+      "success": false,
+      "epsilon": 0.45166000000000006
+    },
+    {
+      "episode": 175,
+      "steps": 34833,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 1.4600000623613596,
+      "success": false,
+      "epsilon": 0.4484933333333333
+    },
+    {
+      "episode": 176,
+      "steps": 35027,
+      "length": 194,
+      "native_return": -194.0,
+      "reward_return": 2.9500000718981028,
+      "success": true,
+      "epsilon": 0.4454216666666668
+    },
+    {
+      "episode": 177,
+      "steps": 35227,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 3.2600000835955143,
+      "success": false,
+      "epsilon": 0.44225500000000006
+    },
+    {
+      "episode": 178,
+      "steps": 35380,
+      "length": 153,
+      "native_return": -153.0,
+      "reward_return": 4.140000054612756,
+      "success": true,
+      "epsilon": 0.43983250000000007
+    },
+    {
+      "episode": 179,
+      "steps": 35580,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 2.0300000812858343,
+      "success": false,
+      "epsilon": 0.43666583333333353
+    },
+    {
+      "episode": 180,
+      "steps": 35764,
+      "length": 184,
+      "native_return": -184.0,
+      "reward_return": 4.320000063627958,
+      "success": true,
+      "epsilon": 0.4337525000000001
+    },
+    {
+      "episode": 181,
+      "steps": 35958,
+      "length": 194,
+      "native_return": -194.0,
+      "reward_return": 3.7100000716745853,
+      "success": true,
+      "epsilon": 0.4306808333333335
+    },
+    {
+      "episode": 182,
+      "steps": 36128,
+      "length": 170,
+      "native_return": -170.0,
+      "reward_return": 3.1400000527501106,
+      "success": true,
+      "epsilon": 0.42798916666666675
+    },
+    {
+      "episode": 183,
+      "steps": 36314,
+      "length": 186,
+      "native_return": -186.0,
+      "reward_return": 3.900000061839819,
+      "success": true,
+      "epsilon": 0.42504416666666667
+    },
+    {
+      "episode": 184,
+      "steps": 36465,
+      "length": 151,
+      "native_return": -151.0,
+      "reward_return": 3.7500000596046448,
+      "success": true,
+      "epsilon": 0.4226533333333332
+    },
+    {
+      "episode": 185,
+      "steps": 36619,
+      "length": 154,
+      "native_return": -154.0,
+      "reward_return": 3.9300000444054604,
+      "success": true,
+      "epsilon": 0.420215
+    },
+    {
+      "episode": 186,
+      "steps": 36778,
+      "length": 159,
+      "native_return": -159.0,
+      "reward_return": 3.4900000412017107,
+      "success": true,
+      "epsilon": 0.41769749999999994
+    },
+    {
+      "episode": 187,
+      "steps": 36946,
+      "length": 168,
+      "native_return": -168.0,
+      "reward_return": 3.5500000528991222,
+      "success": true,
+      "epsilon": 0.41503750000000006
+    },
+    {
+      "episode": 188,
+      "steps": 37146,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 2.4600000753998756,
+      "success": false,
+      "epsilon": 0.4118708333333335
+    },
+    {
+      "episode": 189,
+      "steps": 37313,
+      "length": 167,
+      "native_return": -167.0,
+      "reward_return": 3.430000049993396,
+      "success": true,
+      "epsilon": 0.40922666666666674
+    },
+    {
+      "episode": 190,
+      "steps": 37479,
+      "length": 166,
+      "native_return": -166.0,
+      "reward_return": 3.6700000539422035,
+      "success": true,
+      "epsilon": 0.4065983333333333
+    },
+    {
+      "episode": 191,
+      "steps": 37650,
+      "length": 171,
+      "native_return": -171.0,
+      "reward_return": 3.0000000596046448,
+      "success": true,
+      "epsilon": 0.40389083333333353
+    },
+    {
+      "episode": 192,
+      "steps": 37805,
+      "length": 155,
+      "native_return": -155.0,
+      "reward_return": 4.1200000513345,
+      "success": true,
+      "epsilon": 0.4014366666666668
+    },
+    {
+      "episode": 193,
+      "steps": 37969,
+      "length": 164,
+      "native_return": -164.0,
+      "reward_return": 3.6900000516325235,
+      "success": true,
+      "epsilon": 0.39884
+    },
+    {
+      "episode": 194,
+      "steps": 38138,
+      "length": 169,
+      "native_return": -169.0,
+      "reward_return": 3.3900000546127558,
+      "success": true,
+      "epsilon": 0.39616416666666665
+    },
+    {
+      "episode": 195,
+      "steps": 38291,
+      "length": 153,
+      "native_return": -153.0,
+      "reward_return": 3.9900000542402267,
+      "success": true,
+      "epsilon": 0.39374166666666655
+    },
+    {
+      "episode": 196,
+      "steps": 38491,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 3.4900000765919685,
+      "success": false,
+      "epsilon": 0.3905750000000001
+    },
+    {
+      "episode": 197,
+      "steps": 38650,
+      "length": 159,
+      "native_return": -159.0,
+      "reward_return": 3.85000004991889,
+      "success": true,
+      "epsilon": 0.38805750000000006
+    },
+    {
+      "episode": 198,
+      "steps": 38808,
+      "length": 158,
+      "native_return": -158.0,
+      "reward_return": 3.910000044852495,
+      "success": true,
+      "epsilon": 0.3855558333333332
+    },
+    {
+      "episode": 199,
+      "steps": 38972,
+      "length": 164,
+      "native_return": -164.0,
+      "reward_return": 4.14000004902482,
+      "success": true,
+      "epsilon": 0.38295916666666685
+    },
+    {
+      "episode": 200,
+      "steps": 39172,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 4.060000061988831,
+      "success": true,
+      "epsilon": 0.3797925000000001
+    },
+    {
+      "episode": 201,
+      "steps": 39369,
+      "length": 197,
+      "native_return": -197.0,
+      "reward_return": 4.850000066682696,
+      "success": true,
+      "epsilon": 0.3766733333333332
+    },
+    {
+      "episode": 202,
+      "steps": 39539,
+      "length": 170,
+      "native_return": -170.0,
+      "reward_return": 3.890000043436885,
+      "success": true,
+      "epsilon": 0.37398166666666666
+    },
+    {
+      "episode": 203,
+      "steps": 39735,
+      "length": 196,
+      "native_return": -196.0,
+      "reward_return": 4.290000071749091,
+      "success": true,
+      "epsilon": 0.3708783333333332
+    },
+    {
+      "episode": 204,
+      "steps": 39932,
+      "length": 197,
+      "native_return": -197.0,
+      "reward_return": 4.450000058859587,
+      "success": true,
+      "epsilon": 0.36775916666666686
+    },
+    {
+      "episode": 205,
+      "steps": 40093,
+      "length": 161,
+      "native_return": -161.0,
+      "reward_return": 4.090000061318278,
+      "success": true,
+      "epsilon": 0.3652099999999999
+    },
+    {
+      "episode": 206,
+      "steps": 40252,
+      "length": 159,
+      "native_return": -159.0,
+      "reward_return": 4.270000047981739,
+      "success": true,
+      "epsilon": 0.3626925000000001
+    },
+    {
+      "episode": 207,
+      "steps": 40452,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 3.1900000665336847,
+      "success": false,
+      "epsilon": 0.3595258333333333
+    },
+    {
+      "episode": 208,
+      "steps": 40652,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 3.050000062212348,
+      "success": false,
+      "epsilon": 0.3563591666666668
+    },
+    {
+      "episode": 209,
+      "steps": 40816,
+      "length": 164,
+      "native_return": -164.0,
+      "reward_return": 3.5100000463426113,
+      "success": true,
+      "epsilon": 0.3537625
+    },
+    {
+      "episode": 210,
+      "steps": 40979,
+      "length": 163,
+      "native_return": -163.0,
+      "reward_return": 3.760000040754676,
+      "success": true,
+      "epsilon": 0.3511816666666666
+    },
+    {
+      "episode": 211,
+      "steps": 41133,
+      "length": 154,
+      "native_return": -154.0,
+      "reward_return": 4.800000037997961,
+      "success": true,
+      "epsilon": 0.3487433333333334
+    },
+    {
+      "episode": 212,
+      "steps": 41294,
+      "length": 161,
+      "native_return": -161.0,
+      "reward_return": 3.260000057518482,
+      "success": true,
+      "epsilon": 0.3461941666666667
+    },
+    {
+      "episode": 213,
+      "steps": 41494,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 3.0300000682473183,
+      "success": false,
+      "epsilon": 0.34302750000000015
+    },
+    {
+      "episode": 214,
+      "steps": 41677,
+      "length": 183,
+      "native_return": -183.0,
+      "reward_return": 4.580000057816505,
+      "success": true,
+      "epsilon": 0.34013000000000015
+    },
+    {
+      "episode": 215,
+      "steps": 41875,
+      "length": 198,
+      "native_return": -198.0,
+      "reward_return": 4.73000006005168,
+      "success": true,
+      "epsilon": 0.33699500000000004
+    },
+    {
+      "episode": 216,
+      "steps": 42033,
+      "length": 158,
+      "native_return": -158.0,
+      "reward_return": 4.200000045821071,
+      "success": true,
+      "epsilon": 0.3344933333333332
+    },
+    {
+      "episode": 217,
+      "steps": 42233,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 3.550000060349703,
+      "success": false,
+      "epsilon": 0.33132666666666677
+    },
+    {
+      "episode": 218,
+      "steps": 42396,
+      "length": 163,
+      "native_return": -163.0,
+      "reward_return": 2.9000000581145287,
+      "success": true,
+      "epsilon": 0.3287458333333334
+    },
+    {
+      "episode": 219,
+      "steps": 42596,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 3.830000063404441,
+      "success": false,
+      "epsilon": 0.32557916666666686
+    },
+    {
+      "episode": 220,
+      "steps": 42732,
+      "length": 136,
+      "native_return": -136.0,
+      "reward_return": 3.4000000152736902,
+      "success": true,
+      "epsilon": 0.3234258333333333
+    },
+    {
+      "episode": 221,
+      "steps": 42932,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 3.7400000542402267,
+      "success": false,
+      "epsilon": 0.32025916666666654
+    },
+    {
+      "episode": 222,
+      "steps": 43101,
+      "length": 169,
+      "native_return": -169.0,
+      "reward_return": 4.590000046417117,
+      "success": true,
+      "epsilon": 0.31758333333333344
+    },
+    {
+      "episode": 223,
+      "steps": 43266,
+      "length": 165,
+      "native_return": -165.0,
+      "reward_return": 4.270000049844384,
+      "success": true,
+      "epsilon": 0.3149708333333334
+    },
+    {
+      "episode": 224,
+      "steps": 43391,
+      "length": 125,
+      "native_return": -125.0,
+      "reward_return": 3.9100000262260437,
+      "success": true,
+      "epsilon": 0.31299166666666667
+    },
+    {
+      "episode": 225,
+      "steps": 43545,
+      "length": 154,
+      "native_return": -154.0,
+      "reward_return": 4.14000004529953,
+      "success": true,
+      "epsilon": 0.31055333333333335
+    },
+    {
+      "episode": 226,
+      "steps": 43738,
+      "length": 193,
+      "native_return": -193.0,
+      "reward_return": 4.780000066384673,
+      "success": true,
+      "epsilon": 0.3074975000000001
+    },
+    {
+      "episode": 227,
+      "steps": 43938,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 3.2800000589340925,
+      "success": false,
+      "epsilon": 0.30433083333333355
+    },
+    {
+      "episode": 228,
+      "steps": 44093,
+      "length": 155,
+      "native_return": -155.0,
+      "reward_return": 4.08000004850328,
+      "success": true,
+      "epsilon": 0.3018766666666668
+    },
+    {
+      "episode": 229,
+      "steps": 44267,
+      "length": 174,
+      "native_return": -174.0,
+      "reward_return": 4.050000034272671,
+      "success": true,
+      "epsilon": 0.29912166666666673
+    },
+    {
+      "episode": 230,
+      "steps": 44467,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 3.010000040754676,
+      "success": false,
+      "epsilon": 0.2959550000000002
+    },
+    {
+      "episode": 231,
+      "steps": 44602,
+      "length": 135,
+      "native_return": -135.0,
+      "reward_return": 3.2200000155717134,
+      "success": true,
+      "epsilon": 0.29381750000000006
+    },
+    {
+      "episode": 232,
+      "steps": 44759,
+      "length": 157,
+      "native_return": -157.0,
+      "reward_return": 4.740000052377582,
+      "success": true,
+      "epsilon": 0.29133166666666666
+    },
+    {
+      "episode": 233,
+      "steps": 44896,
+      "length": 137,
+      "native_return": -137.0,
+      "reward_return": 4.050000021234155,
+      "success": true,
+      "epsilon": 0.2891625
+    },
+    {
+      "episode": 234,
+      "steps": 45053,
+      "length": 157,
+      "native_return": -157.0,
+      "reward_return": 4.790000036358833,
+      "success": true,
+      "epsilon": 0.2866766666666668
+    },
+    {
+      "episode": 235,
+      "steps": 45217,
+      "length": 164,
+      "native_return": -164.0,
+      "reward_return": 3.5900000128895044,
+      "success": true,
+      "epsilon": 0.28408
+    },
+    {
+      "episode": 236,
+      "steps": 45417,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 3.6800000611692667,
+      "success": false,
+      "epsilon": 0.28091333333333324
+    },
+    {
+      "episode": 237,
+      "steps": 45542,
+      "length": 125,
+      "native_return": -125.0,
+      "reward_return": 3.8600000217556953,
+      "success": true,
+      "epsilon": 0.2789341666666667
+    },
+    {
+      "episode": 238,
+      "steps": 45668,
+      "length": 126,
+      "native_return": -126.0,
+      "reward_return": 3.4400000292807817,
+      "success": true,
+      "epsilon": 0.27693916666666674
+    },
+    {
+      "episode": 239,
+      "steps": 45808,
+      "length": 140,
+      "native_return": -140.0,
+      "reward_return": 3.390000021085143,
+      "success": true,
+      "epsilon": 0.2747225000000001
+    },
+    {
+      "episode": 240,
+      "steps": 46008,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 3.630000038072467,
+      "success": false,
+      "epsilon": 0.27155583333333333
+    },
+    {
+      "episode": 241,
+      "steps": 46163,
+      "length": 155,
+      "native_return": -155.0,
+      "reward_return": 3.940000008791685,
+      "success": true,
+      "epsilon": 0.2691016666666668
+    },
+    {
+      "episode": 242,
+      "steps": 46363,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 3.340000042691827,
+      "success": false,
+      "epsilon": 0.26593500000000014
+    },
+    {
+      "episode": 243,
+      "steps": 46527,
+      "length": 164,
+      "native_return": -164.0,
+      "reward_return": 4.910000056028366,
+      "success": true,
+      "epsilon": 0.26333833333333334
+    },
+    {
+      "episode": 244,
+      "steps": 46723,
+      "length": 196,
+      "native_return": -196.0,
+      "reward_return": 3.6200000066310167,
+      "success": true,
+      "epsilon": 0.2602350000000001
+    },
+    {
+      "episode": 245,
+      "steps": 46899,
+      "length": 176,
+      "native_return": -176.0,
+      "reward_return": 4.0200000535696745,
+      "success": true,
+      "epsilon": 0.2574483333333335
+    },
+    {
+      "episode": 246,
+      "steps": 47099,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 3.9300000481307507,
+      "success": false,
+      "epsilon": 0.25428166666666674
+    },
+    {
+      "episode": 247,
+      "steps": 47263,
+      "length": 164,
+      "native_return": -164.0,
+      "reward_return": 4.860000049695373,
+      "success": true,
+      "epsilon": 0.25168499999999994
+    },
+    {
+      "episode": 248,
+      "steps": 47463,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 3.300000037997961,
+      "success": false,
+      "epsilon": 0.24851833333333329
+    },
+    {
+      "episode": 249,
+      "steps": 47632,
+      "length": 169,
+      "native_return": -169.0,
+      "reward_return": 4.730000043287873,
+      "success": true,
+      "epsilon": 0.24584250000000007
+    },
+    {
+      "episode": 250,
+      "steps": 47832,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 4.810000041499734,
+      "success": false,
+      "epsilon": 0.2426758333333333
+    },
+    {
+      "episode": 251,
+      "steps": 48032,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 3.540000034496188,
+      "success": false,
+      "epsilon": 0.23950916666666666
+    },
+    {
+      "episode": 252,
+      "steps": 48232,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 2.0000000279396772,
+      "success": false,
+      "epsilon": 0.23634250000000012
+    },
+    {
+      "episode": 253,
+      "steps": 48432,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 3.340000033378601,
+      "success": false,
+      "epsilon": 0.23317583333333336
+    },
+    {
+      "episode": 254,
+      "steps": 48554,
+      "length": 122,
+      "native_return": -122.0,
+      "reward_return": 4.060000024735928,
+      "success": true,
+      "epsilon": 0.2312441666666667
+    },
+    {
+      "episode": 255,
+      "steps": 48754,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 3.4200000409036875,
+      "success": false,
+      "epsilon": 0.22807750000000016
+    },
+    {
+      "episode": 256,
+      "steps": 48954,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 3.420000037178397,
+      "success": false,
+      "epsilon": 0.2249108333333334
+    },
+    {
+      "episode": 257,
+      "steps": 49154,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 2.74000003002584,
+      "success": false,
+      "epsilon": 0.22174416666666663
+    },
+    {
+      "episode": 258,
+      "steps": 49338,
+      "length": 184,
+      "native_return": -184.0,
+      "reward_return": 4.450000058859587,
+      "success": true,
+      "epsilon": 0.2188308333333332
+    },
+    {
+      "episode": 259,
+      "steps": 49538,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 4.070000048726797,
+      "success": false,
+      "epsilon": 0.21566416666666666
+    },
+    {
+      "episode": 260,
+      "steps": 49665,
+      "length": 127,
+      "native_return": -127.0,
+      "reward_return": 4.3500000182539225,
+      "success": true,
+      "epsilon": 0.21365333333333347
+    },
+    {
+      "episode": 261,
+      "steps": 49790,
+      "length": 125,
+      "native_return": -125.0,
+      "reward_return": 3.8400000259280205,
+      "success": true,
+      "epsilon": 0.21167416666666672
+    },
+    {
+      "episode": 262,
+      "steps": 49990,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 3.2500000204890966,
+      "success": false,
+      "epsilon": 0.20850750000000018
+    },
+    {
+      "episode": 263,
+      "steps": 50190,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 2.9700000286102295,
+      "success": false,
+      "epsilon": 0.20534083333333342
+    },
+    {
+      "episode": 264,
+      "steps": 50390,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 1.9800000227987766,
+      "success": false,
+      "epsilon": 0.20217416666666677
+    },
+    {
+      "episode": 265,
+      "steps": 50590,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 2.450000062584877,
+      "success": false,
+      "epsilon": 0.1990075
+    },
+    {
+      "episode": 266,
+      "steps": 50790,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 4.580000044777989,
+      "success": false,
+      "epsilon": 0.19584083333333324
+    },
+    {
+      "episode": 267,
+      "steps": 50990,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 3.290000021457672,
+      "success": false,
+      "epsilon": 0.1926741666666667
+    },
+    {
+      "episode": 268,
+      "steps": 51112,
+      "length": 122,
+      "native_return": -122.0,
+      "reward_return": 4.040000025182962,
+      "success": true,
+      "epsilon": 0.19074250000000004
+    },
+    {
+      "episode": 269,
+      "steps": 51312,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 3.9500000346451998,
+      "success": false,
+      "epsilon": 0.1875758333333335
+    },
+    {
+      "episode": 270,
+      "steps": 51512,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 3.260000040754676,
+      "success": false,
+      "epsilon": 0.18440916666666674
+    },
+    {
+      "episode": 271,
+      "steps": 51662,
+      "length": 150,
+      "native_return": -150.0,
+      "reward_return": 5.400000035762787,
+      "success": true,
+      "epsilon": 0.18203416666666683
+    },
+    {
+      "episode": 272,
+      "steps": 51787,
+      "length": 125,
+      "native_return": -125.0,
+      "reward_return": 4.0800000205636024,
+      "success": true,
+      "epsilon": 0.18005500000000008
+    },
+    {
+      "episode": 273,
+      "steps": 51904,
+      "length": 117,
+      "native_return": -117.0,
+      "reward_return": 4.210000021383166,
+      "success": true,
+      "epsilon": 0.17820249999999993
+    },
+    {
+      "episode": 274,
+      "steps": 52027,
+      "length": 123,
+      "native_return": -123.0,
+      "reward_return": 4.420000018551946,
+      "success": true,
+      "epsilon": 0.17625500000000005
+    },
+    {
+      "episode": 275,
+      "steps": 52151,
+      "length": 124,
+      "native_return": -124.0,
+      "reward_return": 4.030000023543835,
+      "success": true,
+      "epsilon": 0.17429166666666673
+    },
+    {
+      "episode": 276,
+      "steps": 52351,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 2.3600000143051147,
+      "success": false,
+      "epsilon": 0.17112499999999997
+    },
+    {
+      "episode": 277,
+      "steps": 52472,
+      "length": 121,
+      "native_return": -121.0,
+      "reward_return": 4.030000019818544,
+      "success": true,
+      "epsilon": 0.16920916666666674
+    },
+    {
+      "episode": 278,
+      "steps": 52672,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 2.560000019147992,
+      "success": false,
+      "epsilon": 0.16604249999999998
+    },
+    {
+      "episode": 279,
+      "steps": 52872,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 4.1600000485777855,
+      "success": false,
+      "epsilon": 0.16287583333333333
+    },
+    {
+      "episode": 280,
+      "steps": 52993,
+      "length": 121,
+      "native_return": -121.0,
+      "reward_return": 4.3800000213086605,
+      "success": true,
+      "epsilon": 0.1609600000000001
+    },
+    {
+      "episode": 281,
+      "steps": 53144,
+      "length": 151,
+      "native_return": -151.0,
+      "reward_return": 4.620000034570694,
+      "success": true,
+      "epsilon": 0.15856916666666665
+    },
+    {
+      "episode": 282,
+      "steps": 53262,
+      "length": 118,
+      "native_return": -118.0,
+      "reward_return": 4.210000017657876,
+      "success": true,
+      "epsilon": 0.1567008333333333
+    },
+    {
+      "episode": 283,
+      "steps": 53386,
+      "length": 124,
+      "native_return": -124.0,
+      "reward_return": 4.420000022277236,
+      "success": true,
+      "epsilon": 0.15473749999999997
+    },
+    {
+      "episode": 284,
+      "steps": 53508,
+      "length": 122,
+      "native_return": -122.0,
+      "reward_return": 4.370000019669533,
+      "success": true,
+      "epsilon": 0.1528058333333333
+    },
+    {
+      "episode": 285,
+      "steps": 53665,
+      "length": 157,
+      "native_return": -157.0,
+      "reward_return": 5.400000041350722,
+      "success": true,
+      "epsilon": 0.15032
+    },
+    {
+      "episode": 286,
+      "steps": 53865,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 2.700000036507845,
+      "success": false,
+      "epsilon": 0.14715333333333325
+    },
+    {
+      "episode": 287,
+      "steps": 53985,
+      "length": 120,
+      "native_return": -120.0,
+      "reward_return": 4.150000024586916,
+      "success": true,
+      "epsilon": 0.14525333333333346
+    },
+    {
+      "episode": 288,
+      "steps": 54138,
+      "length": 153,
+      "native_return": -153.0,
+      "reward_return": 4.790000041946769,
+      "success": true,
+      "epsilon": 0.14283083333333335
+    },
+    {
+      "episode": 289,
+      "steps": 54266,
+      "length": 128,
+      "native_return": -128.0,
+      "reward_return": 4.13000001385808,
+      "success": true,
+      "epsilon": 0.14080416666666673
+    },
+    {
+      "episode": 290,
+      "steps": 54391,
+      "length": 125,
+      "native_return": -125.0,
+      "reward_return": 4.290000015869737,
+      "success": true,
+      "epsilon": 0.1388250000000002
+    },
+    {
+      "episode": 291,
+      "steps": 54521,
+      "length": 130,
+      "native_return": -130.0,
+      "reward_return": 4.13000001013279,
+      "success": true,
+      "epsilon": 0.13676666666666681
+    },
+    {
+      "episode": 292,
+      "steps": 54718,
+      "length": 197,
+      "native_return": -197.0,
+      "reward_return": 3.850000014528632,
+      "success": true,
+      "epsilon": 0.13364750000000003
+    },
+    {
+      "episode": 293,
+      "steps": 54838,
+      "length": 120,
+      "native_return": -120.0,
+      "reward_return": 4.140000021085143,
+      "success": true,
+      "epsilon": 0.13174750000000002
+    },
+    {
+      "episode": 294,
+      "steps": 54960,
+      "length": 122,
+      "native_return": -122.0,
+      "reward_return": 4.060000021010637,
+      "success": true,
+      "epsilon": 0.12981583333333335
+    },
+    {
+      "episode": 295,
+      "steps": 55089,
+      "length": 129,
+      "native_return": -129.0,
+      "reward_return": 3.750000013038516,
+      "success": true,
+      "epsilon": 0.1277733333333333
+    },
+    {
+      "episode": 296,
+      "steps": 55206,
+      "length": 117,
+      "native_return": -117.0,
+      "reward_return": 4.190000023692846,
+      "success": true,
+      "epsilon": 0.12592083333333337
+    },
+    {
+      "episode": 297,
+      "steps": 55365,
+      "length": 159,
+      "native_return": -159.0,
+      "reward_return": 5.2400000393390656,
+      "success": true,
+      "epsilon": 0.12340333333333331
+    },
+    {
+      "episode": 298,
+      "steps": 55492,
+      "length": 127,
+      "native_return": -127.0,
+      "reward_return": 3.8100000247359276,
+      "success": true,
+      "epsilon": 0.12139250000000013
+    },
+    {
+      "episode": 299,
+      "steps": 55609,
+      "length": 117,
+      "native_return": -117.0,
+      "reward_return": 4.150000026449561,
+      "success": true,
+      "epsilon": 0.11953999999999998
+    },
+    {
+      "episode": 300,
+      "steps": 55770,
+      "length": 161,
+      "native_return": -161.0,
+      "reward_return": 4.990000043064356,
+      "success": true,
+      "epsilon": 0.11699083333333349
+    },
+    {
+      "episode": 301,
+      "steps": 55907,
+      "length": 137,
+      "native_return": -137.0,
+      "reward_return": 3.5300000179558992,
+      "success": true,
+      "epsilon": 0.11482166666666671
+    },
+    {
+      "episode": 302,
+      "steps": 56107,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 5.030000040307641,
+      "success": false,
+      "epsilon": 0.11165499999999995
+    },
+    {
+      "episode": 303,
+      "steps": 56231,
+      "length": 124,
+      "native_return": -124.0,
+      "reward_return": 3.8700000271201134,
+      "success": true,
+      "epsilon": 0.10969166666666663
+    },
+    {
+      "episode": 304,
+      "steps": 56357,
+      "length": 126,
+      "native_return": -126.0,
+      "reward_return": 4.1800000332295895,
+      "success": true,
+      "epsilon": 0.10769666666666666
+    },
+    {
+      "episode": 305,
+      "steps": 56481,
+      "length": 124,
+      "native_return": -124.0,
+      "reward_return": 4.36000001616776,
+      "success": true,
+      "epsilon": 0.10573333333333335
+    },
+    {
+      "episode": 306,
+      "steps": 56639,
+      "length": 158,
+      "native_return": -158.0,
+      "reward_return": 5.170000037178397,
+      "success": true,
+      "epsilon": 0.10323166666666672
+    },
+    {
+      "episode": 307,
+      "steps": 56758,
+      "length": 119,
+      "native_return": -119.0,
+      "reward_return": 4.210000021383166,
+      "success": true,
+      "epsilon": 0.10134750000000015
+    },
+    {
+      "episode": 308,
+      "steps": 56883,
+      "length": 125,
+      "native_return": -125.0,
+      "reward_return": 4.350000023841858,
+      "success": true,
+      "epsilon": 0.09936833333333339
+    },
+    {
+      "episode": 309,
+      "steps": 57002,
+      "length": 119,
+      "native_return": -119.0,
+      "reward_return": 4.130000032484531,
+      "success": true,
+      "epsilon": 0.09748416666666682
+    },
+    {
+      "episode": 310,
+      "steps": 57124,
+      "length": 122,
+      "native_return": -122.0,
+      "reward_return": 4.300000021234155,
+      "success": true,
+      "epsilon": 0.09555250000000015
+    },
+    {
+      "episode": 311,
+      "steps": 57245,
+      "length": 121,
+      "native_return": -121.0,
+      "reward_return": 4.290000021457672,
+      "success": true,
+      "epsilon": 0.0936366666666667
+    },
+    {
+      "episode": 312,
+      "steps": 57410,
+      "length": 165,
+      "native_return": -165.0,
+      "reward_return": 5.520000033080578,
+      "success": true,
+      "epsilon": 0.09102416666666668
+    },
+    {
+      "episode": 313,
+      "steps": 57526,
+      "length": 116,
+      "native_return": -116.0,
+      "reward_return": 4.2500000316649675,
+      "success": true,
+      "epsilon": 0.08918750000000009
+    },
+    {
+      "episode": 314,
+      "steps": 57647,
+      "length": 121,
+      "native_return": -121.0,
+      "reward_return": 4.0400000382214785,
+      "success": true,
+      "epsilon": 0.08727166666666664
+    },
+    {
+      "episode": 315,
+      "steps": 57776,
+      "length": 129,
+      "native_return": -129.0,
+      "reward_return": 4.120000023394823,
+      "success": true,
+      "epsilon": 0.08522916666666669
+    },
+    {
+      "episode": 316,
+      "steps": 57900,
+      "length": 124,
+      "native_return": -124.0,
+      "reward_return": 4.120000021532178,
+      "success": true,
+      "epsilon": 0.08326583333333337
+    },
+    {
+      "episode": 317,
+      "steps": 58055,
+      "length": 155,
+      "native_return": -155.0,
+      "reward_return": 5.550000034272671,
+      "success": true,
+      "epsilon": 0.08081166666666673
+    },
+    {
+      "episode": 318,
+      "steps": 58215,
+      "length": 160,
+      "native_return": -160.0,
+      "reward_return": 4.780000044032931,
+      "success": true,
+      "epsilon": 0.07827833333333345
+    },
+    {
+      "episode": 319,
+      "steps": 58338,
+      "length": 123,
+      "native_return": -123.0,
+      "reward_return": 4.330000026151538,
+      "success": true,
+      "epsilon": 0.07633083333333335
+    },
+    {
+      "episode": 320,
+      "steps": 58460,
+      "length": 122,
+      "native_return": -122.0,
+      "reward_return": 4.590000016614795,
+      "success": true,
+      "epsilon": 0.07439916666666668
+    },
+    {
+      "episode": 321,
+      "steps": 58628,
+      "length": 168,
+      "native_return": -168.0,
+      "reward_return": 5.210000040009618,
+      "success": true,
+      "epsilon": 0.07173916666666669
+    },
+    {
+      "episode": 322,
+      "steps": 58783,
+      "length": 155,
+      "native_return": -155.0,
+      "reward_return": 4.920000046491623,
+      "success": true,
+      "epsilon": 0.06928500000000004
+    },
+    {
+      "episode": 323,
+      "steps": 58967,
+      "length": 184,
+      "native_return": -184.0,
+      "reward_return": 6.2200000416487455,
+      "success": true,
+      "epsilon": 0.06637166666666683
+    },
+    {
+      "episode": 324,
+      "steps": 59139,
+      "length": 172,
+      "native_return": -172.0,
+      "reward_return": 5.860000049695373,
+      "success": true,
+      "epsilon": 0.0636483333333333
+    },
+    {
+      "episode": 325,
+      "steps": 59307,
+      "length": 168,
+      "native_return": -168.0,
+      "reward_return": 5.5800000466406345,
+      "success": true,
+      "epsilon": 0.0609883333333332
+    },
+    {
+      "episode": 326,
+      "steps": 59428,
+      "length": 121,
+      "native_return": -121.0,
+      "reward_return": 4.310000017285347,
+      "success": true,
+      "epsilon": 0.05907249999999997
+    },
+    {
+      "episode": 327,
+      "steps": 59584,
+      "length": 156,
+      "native_return": -156.0,
+      "reward_return": 5.150000041350722,
+      "success": true,
+      "epsilon": 0.0566025
+    },
+    {
+      "episode": 328,
+      "steps": 59759,
+      "length": 175,
+      "native_return": -175.0,
+      "reward_return": 5.770000038668513,
+      "success": true,
+      "epsilon": 0.05383166666666672
+    },
+    {
+      "episode": 329,
+      "steps": 59860,
+      "length": 101,
+      "native_return": -101.0,
+      "reward_return": 3.2900000046938658,
+      "success": true,
+      "epsilon": 0.052232499999999904
+    },
+    {
+      "episode": 330,
+      "steps": 59981,
+      "length": 121,
+      "native_return": -121.0,
+      "reward_return": 4.5000000186264515,
+      "success": true,
+      "epsilon": 0.050316666666666676
+    },
+    {
+      "episode": 331,
+      "steps": 60094,
+      "length": 113,
+      "native_return": -113.0,
+      "reward_return": 4.270000025629997,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 332,
+      "steps": 60213,
+      "length": 119,
+      "native_return": -119.0,
+      "reward_return": 4.490000022575259,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 333,
+      "steps": 60359,
+      "length": 146,
+      "native_return": -146.0,
+      "reward_return": 5.240000044927001,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 334,
+      "steps": 60473,
+      "length": 114,
+      "native_return": -114.0,
+      "reward_return": 4.310000028461218,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 335,
+      "steps": 60623,
+      "length": 150,
+      "native_return": -150.0,
+      "reward_return": 5.3000000435858965,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 336,
+      "steps": 60740,
+      "length": 117,
+      "native_return": -117.0,
+      "reward_return": 4.400000024586916,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 337,
+      "steps": 60857,
+      "length": 117,
+      "native_return": -117.0,
+      "reward_return": 4.180000023916364,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 338,
+      "steps": 61001,
+      "length": 144,
+      "native_return": -144.0,
+      "reward_return": 5.370000042021275,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 339,
+      "steps": 61125,
+      "length": 124,
+      "native_return": -124.0,
+      "reward_return": 4.430000022053719,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 340,
+      "steps": 61237,
+      "length": 112,
+      "native_return": -112.0,
+      "reward_return": 4.570000026375055,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 341,
+      "steps": 61325,
+      "length": 88,
+      "native_return": -88.0,
+      "reward_return": 3.500000013038516,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 342,
+      "steps": 61444,
+      "length": 119,
+      "native_return": -119.0,
+      "reward_return": 4.350000021979213,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 343,
+      "steps": 61557,
+      "length": 113,
+      "native_return": -113.0,
+      "reward_return": 4.430000025779009,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 344,
+      "steps": 61681,
+      "length": 124,
+      "native_return": -124.0,
+      "reward_return": 4.500000014901161,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 345,
+      "steps": 61825,
+      "length": 144,
+      "native_return": -144.0,
+      "reward_return": 5.270000046119094,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 346,
+      "steps": 61945,
+      "length": 120,
+      "native_return": -120.0,
+      "reward_return": 4.640000019222498,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 347,
+      "steps": 62093,
+      "length": 148,
+      "native_return": -148.0,
+      "reward_return": 5.270000044256449,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 348,
+      "steps": 62215,
+      "length": 122,
+      "native_return": -122.0,
+      "reward_return": 4.530000017955899,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 349,
+      "steps": 62368,
+      "length": 153,
+      "native_return": -153.0,
+      "reward_return": 5.180000042542815,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 350,
+      "steps": 62514,
+      "length": 146,
+      "native_return": -146.0,
+      "reward_return": 5.39000004157424,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 351,
+      "steps": 62631,
+      "length": 117,
+      "native_return": -117.0,
+      "reward_return": 4.460000021383166,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 352,
+      "steps": 62742,
+      "length": 111,
+      "native_return": -111.0,
+      "reward_return": 4.580000026151538,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 353,
+      "steps": 62887,
+      "length": 145,
+      "native_return": -145.0,
+      "reward_return": 5.130000047385693,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 354,
+      "steps": 63003,
+      "length": 116,
+      "native_return": -116.0,
+      "reward_return": 4.270000021904707,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 355,
+      "steps": 63122,
+      "length": 119,
+      "native_return": -119.0,
+      "reward_return": 4.600000020116568,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 356,
+      "steps": 63266,
+      "length": 144,
+      "native_return": -144.0,
+      "reward_return": 5.260000044479966,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 357,
+      "steps": 63411,
+      "length": 145,
+      "native_return": -145.0,
+      "reward_return": 5.480000043287873,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 358,
+      "steps": 63521,
+      "length": 110,
+      "native_return": -110.0,
+      "reward_return": 4.670000027865171,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 359,
+      "steps": 63637,
+      "length": 116,
+      "native_return": -116.0,
+      "reward_return": 4.220000024884939,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 360,
+      "steps": 63787,
+      "length": 150,
+      "native_return": -150.0,
+      "reward_return": 5.3500000461936,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 361,
+      "steps": 63943,
+      "length": 156,
+      "native_return": -156.0,
+      "reward_return": 5.68000004068017,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 362,
+      "steps": 64119,
+      "length": 176,
+      "native_return": -176.0,
+      "reward_return": 5.970000052824616,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 363,
+      "steps": 64236,
+      "length": 117,
+      "native_return": -117.0,
+      "reward_return": 4.3400000259280205,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 364,
+      "steps": 64382,
+      "length": 146,
+      "native_return": -146.0,
+      "reward_return": 5.170000044628978,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 365,
+      "steps": 64496,
+      "length": 114,
+      "native_return": -114.0,
+      "reward_return": 4.520000018179417,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 366,
+      "steps": 64644,
+      "length": 148,
+      "native_return": -148.0,
+      "reward_return": 5.380000041797757,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 367,
+      "steps": 64787,
+      "length": 143,
+      "native_return": -143.0,
+      "reward_return": 5.170000042766333,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 368,
+      "steps": 64901,
+      "length": 114,
+      "native_return": -114.0,
+      "reward_return": 4.420000026002526,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 369,
+      "steps": 65047,
+      "length": 146,
+      "native_return": -146.0,
+      "reward_return": 5.340000040829182,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 370,
+      "steps": 65165,
+      "length": 118,
+      "native_return": -118.0,
+      "reward_return": 4.330000018700957,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 371,
+      "steps": 65280,
+      "length": 115,
+      "native_return": -115.0,
+      "reward_return": 4.410000020638108,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 372,
+      "steps": 65464,
+      "length": 184,
+      "native_return": -184.0,
+      "reward_return": 5.950000055134296,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 373,
+      "steps": 65578,
+      "length": 114,
+      "native_return": -114.0,
+      "reward_return": 4.260000020265579,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 374,
+      "steps": 65732,
+      "length": 154,
+      "native_return": -154.0,
+      "reward_return": 5.510000057518482,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 375,
+      "steps": 65850,
+      "length": 118,
+      "native_return": -118.0,
+      "reward_return": 4.450000021606684,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 376,
+      "steps": 65967,
+      "length": 117,
+      "native_return": -117.0,
+      "reward_return": 4.400000020861626,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 377,
+      "steps": 66107,
+      "length": 140,
+      "native_return": -140.0,
+      "reward_return": 5.1000000461936,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 378,
+      "steps": 66244,
+      "length": 137,
+      "native_return": -137.0,
+      "reward_return": 5.18000004440546,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 379,
+      "steps": 66355,
+      "length": 111,
+      "native_return": -111.0,
+      "reward_return": 4.170000024139881,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 380,
+      "steps": 66504,
+      "length": 149,
+      "native_return": -149.0,
+      "reward_return": 5.650000045076013,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 381,
+      "steps": 66614,
+      "length": 110,
+      "native_return": -110.0,
+      "reward_return": 4.53000002540648,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 382,
+      "steps": 66759,
+      "length": 145,
+      "native_return": -145.0,
+      "reward_return": 5.16000004671514,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 383,
+      "steps": 66873,
+      "length": 114,
+      "native_return": -114.0,
+      "reward_return": 3.8600000254809856,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 384,
+      "steps": 67021,
+      "length": 148,
+      "native_return": -148.0,
+      "reward_return": 5.190000046044588,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 385,
+      "steps": 67171,
+      "length": 150,
+      "native_return": -150.0,
+      "reward_return": 5.190000036731362,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 386,
+      "steps": 67285,
+      "length": 114,
+      "native_return": -114.0,
+      "reward_return": 4.370000027120113,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 387,
+      "steps": 67420,
+      "length": 135,
+      "native_return": -135.0,
+      "reward_return": 4.960000045597553,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 388,
+      "steps": 67556,
+      "length": 136,
+      "native_return": -136.0,
+      "reward_return": 5.16000004298985,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 389,
+      "steps": 67694,
+      "length": 138,
+      "native_return": -138.0,
+      "reward_return": 5.12000004388392,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 390,
+      "steps": 67828,
+      "length": 134,
+      "native_return": -134.0,
+      "reward_return": 4.970000047236681,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 391,
+      "steps": 67971,
+      "length": 143,
+      "native_return": -143.0,
+      "reward_return": 5.2600000482052565,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 392,
+      "steps": 68131,
+      "length": 160,
+      "native_return": -160.0,
+      "reward_return": 6.010000064969063,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 393,
+      "steps": 68276,
+      "length": 145,
+      "native_return": -145.0,
+      "reward_return": 5.230000041425228,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 394,
+      "steps": 68428,
+      "length": 152,
+      "native_return": -152.0,
+      "reward_return": 5.600000057369471,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 395,
+      "steps": 68565,
+      "length": 137,
+      "native_return": -137.0,
+      "reward_return": 4.940000047907233,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 396,
+      "steps": 68676,
+      "length": 111,
+      "native_return": -111.0,
+      "reward_return": 4.630000025033951,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 397,
+      "steps": 68781,
+      "length": 105,
+      "native_return": -105.0,
+      "reward_return": 4.090000027790666,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 398,
+      "steps": 68918,
+      "length": 137,
+      "native_return": -137.0,
+      "reward_return": 5.050000045448542,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 399,
+      "steps": 69054,
+      "length": 136,
+      "native_return": -136.0,
+      "reward_return": 4.950000047683716,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 400,
+      "steps": 69193,
+      "length": 139,
+      "native_return": -139.0,
+      "reward_return": 5.130000049248338,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 401,
+      "steps": 69329,
+      "length": 136,
+      "native_return": -136.0,
+      "reward_return": 4.920000044628978,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 402,
+      "steps": 69464,
+      "length": 135,
+      "native_return": -135.0,
+      "reward_return": 4.970000045374036,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 403,
+      "steps": 69597,
+      "length": 133,
+      "native_return": -133.0,
+      "reward_return": 4.850000042468309,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 404,
+      "steps": 69709,
+      "length": 112,
+      "native_return": -112.0,
+      "reward_return": 4.310000026598573,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 405,
+      "steps": 69827,
+      "length": 118,
+      "native_return": -118.0,
+      "reward_return": 4.410000020638108,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 406,
+      "steps": 69942,
+      "length": 115,
+      "native_return": -115.0,
+      "reward_return": 4.270000025629997,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 407,
+      "steps": 70090,
+      "length": 148,
+      "native_return": -148.0,
+      "reward_return": 5.380000043660402,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 408,
+      "steps": 70243,
+      "length": 153,
+      "native_return": -153.0,
+      "reward_return": 5.6000000443309546,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 409,
+      "steps": 70358,
+      "length": 115,
+      "native_return": -115.0,
+      "reward_return": 4.440000019967556,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 410,
+      "steps": 70472,
+      "length": 114,
+      "native_return": -114.0,
+      "reward_return": 4.250000027939677,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 411,
+      "steps": 70609,
+      "length": 137,
+      "native_return": -137.0,
+      "reward_return": 4.89000004529953,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 412,
+      "steps": 70781,
+      "length": 172,
+      "native_return": -172.0,
+      "reward_return": 5.540000069886446,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 413,
+      "steps": 70916,
+      "length": 135,
+      "native_return": -135.0,
+      "reward_return": 5.130000041797757,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 414,
+      "steps": 71052,
+      "length": 136,
+      "native_return": -136.0,
+      "reward_return": 4.840000048279762,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 415,
+      "steps": 71186,
+      "length": 134,
+      "native_return": -134.0,
+      "reward_return": 5.14000004157424,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 416,
+      "steps": 71335,
+      "length": 149,
+      "native_return": -149.0,
+      "reward_return": 5.33000004850328,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 417,
+      "steps": 71491,
+      "length": 156,
+      "native_return": -156.0,
+      "reward_return": 5.77000005915761,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 418,
+      "steps": 71603,
+      "length": 112,
+      "native_return": -112.0,
+      "reward_return": 4.330000028014183,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 419,
+      "steps": 71717,
+      "length": 114,
+      "native_return": -114.0,
+      "reward_return": 4.270000027492642,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 420,
+      "steps": 71851,
+      "length": 134,
+      "native_return": -134.0,
+      "reward_return": 5.030000042170286,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 421,
+      "steps": 71985,
+      "length": 134,
+      "native_return": -134.0,
+      "reward_return": 4.760000044479966,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 422,
+      "steps": 72096,
+      "length": 111,
+      "native_return": -111.0,
+      "reward_return": 4.660000026226044,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 423,
+      "steps": 72258,
+      "length": 162,
+      "native_return": -162.0,
+      "reward_return": 5.780000034719706,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 424,
+      "steps": 72394,
+      "length": 136,
+      "native_return": -136.0,
+      "reward_return": 5.050000045448542,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 425,
+      "steps": 72559,
+      "length": 165,
+      "native_return": -165.0,
+      "reward_return": 5.67000006698072,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 426,
+      "steps": 72672,
+      "length": 113,
+      "native_return": -113.0,
+      "reward_return": 4.420000024139881,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 427,
+      "steps": 72831,
+      "length": 159,
+      "native_return": -159.0,
+      "reward_return": 5.760000037029386,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 428,
+      "steps": 72987,
+      "length": 156,
+      "native_return": -156.0,
+      "reward_return": 5.810000039637089,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 429,
+      "steps": 73106,
+      "length": 119,
+      "native_return": -119.0,
+      "reward_return": 4.490000018849969,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 430,
+      "steps": 73224,
+      "length": 118,
+      "native_return": -118.0,
+      "reward_return": 4.180000023916364,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 431,
+      "steps": 73380,
+      "length": 156,
+      "native_return": -156.0,
+      "reward_return": 5.670000052079558,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 432,
+      "steps": 73537,
+      "length": 157,
+      "native_return": -157.0,
+      "reward_return": 5.710000047460198,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 433,
+      "steps": 73696,
+      "length": 159,
+      "native_return": -159.0,
+      "reward_return": 5.770000064745545,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 434,
+      "steps": 73854,
+      "length": 158,
+      "native_return": -158.0,
+      "reward_return": 5.570000052452087,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 435,
+      "steps": 74018,
+      "length": 164,
+      "native_return": -164.0,
+      "reward_return": 5.850000033155084,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 436,
+      "steps": 74171,
+      "length": 153,
+      "native_return": -153.0,
+      "reward_return": 5.3200000412762165,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 437,
+      "steps": 74337,
+      "length": 166,
+      "native_return": -166.0,
+      "reward_return": 6.020000061020255,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 438,
+      "steps": 74454,
+      "length": 117,
+      "native_return": -117.0,
+      "reward_return": 4.420000020414591,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 439,
+      "steps": 74606,
+      "length": 152,
+      "native_return": -152.0,
+      "reward_return": 5.290000049397349,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 440,
+      "steps": 74717,
+      "length": 111,
+      "native_return": -111.0,
+      "reward_return": 4.360000027343631,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 441,
+      "steps": 74850,
+      "length": 133,
+      "native_return": -133.0,
+      "reward_return": 4.890000047162175,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 442,
+      "steps": 74971,
+      "length": 121,
+      "native_return": -121.0,
+      "reward_return": 4.350000021979213,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 443,
+      "steps": 75140,
+      "length": 169,
+      "native_return": -169.0,
+      "reward_return": 5.510000059381127,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 444,
+      "steps": 75274,
+      "length": 134,
+      "native_return": -134.0,
+      "reward_return": 4.880000043660402,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 445,
+      "steps": 75393,
+      "length": 119,
+      "native_return": -119.0,
+      "reward_return": 4.4600000232458115,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 446,
+      "steps": 75549,
+      "length": 156,
+      "native_return": -156.0,
+      "reward_return": 5.850000035017729,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 447,
+      "steps": 75704,
+      "length": 155,
+      "native_return": -155.0,
+      "reward_return": 5.75000006146729,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 448,
+      "steps": 75855,
+      "length": 151,
+      "native_return": -151.0,
+      "reward_return": 5.360000044107437,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 449,
+      "steps": 76014,
+      "length": 159,
+      "native_return": -159.0,
+      "reward_return": 5.700000058859587,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 450,
+      "steps": 76127,
+      "length": 113,
+      "native_return": -113.0,
+      "reward_return": 4.610000021755695,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 451,
+      "steps": 76280,
+      "length": 153,
+      "native_return": -153.0,
+      "reward_return": 5.620000042021275,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 452,
+      "steps": 76413,
+      "length": 133,
+      "native_return": -133.0,
+      "reward_return": 4.980000041425228,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 453,
+      "steps": 76571,
+      "length": 158,
+      "native_return": -158.0,
+      "reward_return": 5.840000037103891,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 454,
+      "steps": 76685,
+      "length": 114,
+      "native_return": -114.0,
+      "reward_return": 4.530000023543835,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 455,
+      "steps": 76801,
+      "length": 116,
+      "native_return": -116.0,
+      "reward_return": 4.400000022724271,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 456,
+      "steps": 76959,
+      "length": 158,
+      "native_return": -158.0,
+      "reward_return": 5.820000050589442,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 457,
+      "steps": 77123,
+      "length": 164,
+      "native_return": -164.0,
+      "reward_return": 5.870000055059791,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 458,
+      "steps": 77234,
+      "length": 111,
+      "native_return": -111.0,
+      "reward_return": 4.580000026151538,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 459,
+      "steps": 77356,
+      "length": 122,
+      "native_return": -122.0,
+      "reward_return": 4.440000018104911,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 460,
+      "steps": 77515,
+      "length": 159,
+      "native_return": -159.0,
+      "reward_return": 5.54000005312264,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 461,
+      "steps": 77684,
+      "length": 169,
+      "native_return": -169.0,
+      "reward_return": 5.470000073313713,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 462,
+      "steps": 77840,
+      "length": 156,
+      "native_return": -156.0,
+      "reward_return": 5.400000026449561,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 463,
+      "steps": 78003,
+      "length": 163,
+      "native_return": -163.0,
+      "reward_return": 5.620000034570694,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 464,
+      "steps": 78157,
+      "length": 154,
+      "native_return": -154.0,
+      "reward_return": 5.680000051856041,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 465,
+      "steps": 78274,
+      "length": 117,
+      "native_return": -117.0,
+      "reward_return": 4.3400000259280205,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 466,
+      "steps": 78426,
+      "length": 152,
+      "native_return": -152.0,
+      "reward_return": 5.570000033825636,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 467,
+      "steps": 78541,
+      "length": 115,
+      "native_return": -115.0,
+      "reward_return": 4.300000024959445,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 468,
+      "steps": 78692,
+      "length": 151,
+      "native_return": -151.0,
+      "reward_return": 5.680000029504299,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 469,
+      "steps": 78826,
+      "length": 134,
+      "native_return": -134.0,
+      "reward_return": 4.650000033900142,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 470,
+      "steps": 78971,
+      "length": 145,
+      "native_return": -145.0,
+      "reward_return": 5.270000046119094,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 471,
+      "steps": 79101,
+      "length": 130,
+      "native_return": -130.0,
+      "reward_return": 4.820000035688281,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 472,
+      "steps": 79235,
+      "length": 134,
+      "native_return": -134.0,
+      "reward_return": 4.830000041052699,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 473,
+      "steps": 79349,
+      "length": 114,
+      "native_return": -114.0,
+      "reward_return": 4.550000024959445,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 474,
+      "steps": 79502,
+      "length": 153,
+      "native_return": -153.0,
+      "reward_return": 5.620000056922436,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 475,
+      "steps": 79661,
+      "length": 159,
+      "native_return": -159.0,
+      "reward_return": 5.890000035986304,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 476,
+      "steps": 79815,
+      "length": 154,
+      "native_return": -154.0,
+      "reward_return": 5.390000030398369,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 477,
+      "steps": 79970,
+      "length": 155,
+      "native_return": -155.0,
+      "reward_return": 5.650000039488077,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 478,
+      "steps": 80118,
+      "length": 148,
+      "native_return": -148.0,
+      "reward_return": 5.480000032112002,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 479,
+      "steps": 80252,
+      "length": 134,
+      "native_return": -134.0,
+      "reward_return": 5.000000033527613,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 480,
+      "steps": 80409,
+      "length": 157,
+      "native_return": -157.0,
+      "reward_return": 5.630000032484531,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 481,
+      "steps": 80561,
+      "length": 152,
+      "native_return": -152.0,
+      "reward_return": 5.390000030398369,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 482,
+      "steps": 80718,
+      "length": 157,
+      "native_return": -157.0,
+      "reward_return": 5.970000030472875,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 483,
+      "steps": 80837,
+      "length": 119,
+      "native_return": -119.0,
+      "reward_return": 4.450000017881393,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 484,
+      "steps": 81000,
+      "length": 163,
+      "native_return": -163.0,
+      "reward_return": 5.850000029429793,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 485,
+      "steps": 81156,
+      "length": 156,
+      "native_return": -156.0,
+      "reward_return": 5.780000030994415,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 486,
+      "steps": 81332,
+      "length": 176,
+      "native_return": -176.0,
+      "reward_return": 5.370000042021275,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 487,
+      "steps": 81498,
+      "length": 166,
+      "native_return": -166.0,
+      "reward_return": 6.010000025853515,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 488,
+      "steps": 81616,
+      "length": 118,
+      "native_return": -118.0,
+      "reward_return": 4.6200000159442425,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 489,
+      "steps": 81731,
+      "length": 115,
+      "native_return": -115.0,
+      "reward_return": 4.270000023767352,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 490,
+      "steps": 81892,
+      "length": 161,
+      "native_return": -161.0,
+      "reward_return": 5.810000028461218,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 491,
+      "steps": 82060,
+      "length": 168,
+      "native_return": -168.0,
+      "reward_return": 5.850000059232116,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 492,
+      "steps": 82229,
+      "length": 169,
+      "native_return": -169.0,
+      "reward_return": 6.2400000263005495,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 493,
+      "steps": 82387,
+      "length": 158,
+      "native_return": -158.0,
+      "reward_return": 5.73000006005168,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 494,
+      "steps": 82535,
+      "length": 148,
+      "native_return": -148.0,
+      "reward_return": 5.250000026077032,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 495,
+      "steps": 82705,
+      "length": 170,
+      "native_return": -170.0,
+      "reward_return": 5.100000038743019,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 496,
+      "steps": 82852,
+      "length": 147,
+      "native_return": -147.0,
+      "reward_return": 5.290000036358833,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 497,
+      "steps": 83002,
+      "length": 150,
+      "native_return": -150.0,
+      "reward_return": 5.580000031739473,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 498,
+      "steps": 83170,
+      "length": 168,
+      "native_return": -168.0,
+      "reward_return": 5.860000068321824,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 499,
+      "steps": 83325,
+      "length": 155,
+      "native_return": -155.0,
+      "reward_return": 5.530000034719706,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 500,
+      "steps": 83443,
+      "length": 118,
+      "native_return": -118.0,
+      "reward_return": 4.540000019595027,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 501,
+      "steps": 83580,
+      "length": 137,
+      "native_return": -137.0,
+      "reward_return": 4.980000041425228,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 502,
+      "steps": 83744,
+      "length": 164,
+      "native_return": -164.0,
+      "reward_return": 5.560000039637089,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 503,
+      "steps": 83911,
+      "length": 167,
+      "native_return": -167.0,
+      "reward_return": 6.070000030100346,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 504,
+      "steps": 84032,
+      "length": 121,
+      "native_return": -121.0,
+      "reward_return": 4.38000001385808,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 505,
+      "steps": 84151,
+      "length": 119,
+      "native_return": -119.0,
+      "reward_return": 4.440000019967556,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 506,
+      "steps": 84297,
+      "length": 146,
+      "native_return": -146.0,
+      "reward_return": 5.2100000362843275,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 507,
+      "steps": 84497,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 4.280000042170286,
+      "success": false,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 508,
+      "steps": 84647,
+      "length": 150,
+      "native_return": -150.0,
+      "reward_return": 5.5500000305473804,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 509,
+      "steps": 84788,
+      "length": 141,
+      "native_return": -141.0,
+      "reward_return": 4.9500000309199095,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 510,
+      "steps": 84953,
+      "length": 165,
+      "native_return": -165.0,
+      "reward_return": 5.670000029727817,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 511,
+      "steps": 85087,
+      "length": 134,
+      "native_return": -134.0,
+      "reward_return": 5.250000033527613,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 512,
+      "steps": 85287,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 6.370000058785081,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 513,
+      "steps": 85403,
+      "length": 116,
+      "native_return": -116.0,
+      "reward_return": 4.400000024586916,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 514,
+      "steps": 85554,
+      "length": 151,
+      "native_return": -151.0,
+      "reward_return": 5.4500000346452,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 515,
+      "steps": 85719,
+      "length": 165,
+      "native_return": -165.0,
+      "reward_return": 5.610000029206276,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 516,
+      "steps": 85919,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 6.160000059753656,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 517,
+      "steps": 86068,
+      "length": 149,
+      "native_return": -149.0,
+      "reward_return": 4.9300000462681055,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 518,
+      "steps": 86182,
+      "length": 114,
+      "native_return": -114.0,
+      "reward_return": 4.480000024661422,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 519,
+      "steps": 86354,
+      "length": 172,
+      "native_return": -172.0,
+      "reward_return": 6.250000057742,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 520,
+      "steps": 86506,
+      "length": 152,
+      "native_return": -152.0,
+      "reward_return": 5.400000026449561,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 521,
+      "steps": 86622,
+      "length": 116,
+      "native_return": -116.0,
+      "reward_return": 4.640000022947788,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 522,
+      "steps": 86785,
+      "length": 163,
+      "native_return": -163.0,
+      "reward_return": 5.730000039562583,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 523,
+      "steps": 86956,
+      "length": 171,
+      "native_return": -171.0,
+      "reward_return": 5.580000031739473,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 524,
+      "steps": 87075,
+      "length": 119,
+      "native_return": -119.0,
+      "reward_return": 4.440000021830201,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 525,
+      "steps": 87189,
+      "length": 114,
+      "native_return": -114.0,
+      "reward_return": 4.580000024288893,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 526,
+      "steps": 87389,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 3.900000063702464,
+      "success": false,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 527,
+      "steps": 87507,
+      "length": 118,
+      "native_return": -118.0,
+      "reward_return": 4.530000023543835,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 528,
+      "steps": 87661,
+      "length": 154,
+      "native_return": -154.0,
+      "reward_return": 5.250000044703484,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 529,
+      "steps": 87810,
+      "length": 149,
+      "native_return": -149.0,
+      "reward_return": 5.490000035613775,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 530,
+      "steps": 87976,
+      "length": 166,
+      "native_return": -166.0,
+      "reward_return": 5.450000040233135,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 531,
+      "steps": 88095,
+      "length": 119,
+      "native_return": -119.0,
+      "reward_return": 4.440000016242266,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 532,
+      "steps": 88241,
+      "length": 146,
+      "native_return": -146.0,
+      "reward_return": 5.590000035241246,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 533,
+      "steps": 88361,
+      "length": 120,
+      "native_return": -120.0,
+      "reward_return": 4.610000014305115,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 534,
+      "steps": 88475,
+      "length": 114,
+      "native_return": -114.0,
+      "reward_return": 4.580000024288893,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 535,
+      "steps": 88675,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 3.820000033825636,
+      "success": false,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 536,
+      "steps": 88790,
+      "length": 115,
+      "native_return": -115.0,
+      "reward_return": 4.290000027045608,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 537,
+      "steps": 88903,
+      "length": 113,
+      "native_return": -113.0,
+      "reward_return": 4.640000024810433,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 538,
+      "steps": 89020,
+      "length": 117,
+      "native_return": -117.0,
+      "reward_return": 4.32000002078712,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 539,
+      "steps": 89142,
+      "length": 122,
+      "native_return": -122.0,
+      "reward_return": 4.400000020861626,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 540,
+      "steps": 89342,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 4.800000052899122,
+      "success": false,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 541,
+      "steps": 89505,
+      "length": 163,
+      "native_return": -163.0,
+      "reward_return": 3.9400000367313623,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 542,
+      "steps": 89705,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 4.5200000405311584,
+      "success": false,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 543,
+      "steps": 89825,
+      "length": 120,
+      "native_return": -120.0,
+      "reward_return": 4.510000016540289,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 544,
+      "steps": 90025,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 4.790000036358833,
+      "success": false,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 545,
+      "steps": 90225,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 3.8400000408291817,
+      "success": false,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 546,
+      "steps": 90345,
+      "length": 120,
+      "native_return": -120.0,
+      "reward_return": 4.500000016763806,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 547,
+      "steps": 90523,
+      "length": 178,
+      "native_return": -178.0,
+      "reward_return": 5.490000057965517,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 548,
+      "steps": 90646,
+      "length": 123,
+      "native_return": -123.0,
+      "reward_return": 4.540000019595027,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 549,
+      "steps": 90761,
+      "length": 115,
+      "native_return": -115.0,
+      "reward_return": 4.490000022575259,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 550,
+      "steps": 90935,
+      "length": 174,
+      "native_return": -174.0,
+      "reward_return": 5.730000035837293,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 551,
+      "steps": 91114,
+      "length": 179,
+      "native_return": -179.0,
+      "reward_return": 6.170000055804849,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 552,
+      "steps": 91313,
+      "length": 199,
+      "native_return": -199.0,
+      "reward_return": 6.3300000466406345,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 553,
+      "steps": 91429,
+      "length": 116,
+      "native_return": -116.0,
+      "reward_return": 4.480000017210841,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 554,
+      "steps": 91544,
+      "length": 115,
+      "native_return": -115.0,
+      "reward_return": 4.270000031217933,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 555,
+      "steps": 91664,
+      "length": 120,
+      "native_return": -120.0,
+      "reward_return": 4.430000018328428,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 556,
+      "steps": 91782,
+      "length": 118,
+      "native_return": -118.0,
+      "reward_return": 4.140000024810433,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 557,
+      "steps": 91982,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 4.830000029876828,
+      "success": false,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 558,
+      "steps": 92103,
+      "length": 121,
+      "native_return": -121.0,
+      "reward_return": 4.560000017285347,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 559,
+      "steps": 92218,
+      "length": 115,
+      "native_return": -115.0,
+      "reward_return": 4.26000002771616,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 560,
+      "steps": 92331,
+      "length": 113,
+      "native_return": -113.0,
+      "reward_return": 4.400000024586916,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 561,
+      "steps": 92480,
+      "length": 149,
+      "native_return": -149.0,
+      "reward_return": 4.400000020861626,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 562,
+      "steps": 92651,
+      "length": 171,
+      "native_return": -171.0,
+      "reward_return": 5.580000031739473,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 563,
+      "steps": 92837,
+      "length": 186,
+      "native_return": -186.0,
+      "reward_return": 5.470000052824616,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 564,
+      "steps": 93003,
+      "length": 166,
+      "native_return": -166.0,
+      "reward_return": 5.9200000539422035,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 565,
+      "steps": 93157,
+      "length": 154,
+      "native_return": -154.0,
+      "reward_return": 5.660000029951334,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 566,
+      "steps": 93271,
+      "length": 114,
+      "native_return": -114.0,
+      "reward_return": 4.270000027492642,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 567,
+      "steps": 93432,
+      "length": 161,
+      "native_return": -161.0,
+      "reward_return": 5.930000027641654,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 568,
+      "steps": 93545,
+      "length": 113,
+      "native_return": -113.0,
+      "reward_return": 4.640000022947788,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 569,
+      "steps": 93662,
+      "length": 117,
+      "native_return": -117.0,
+      "reward_return": 4.540000015869737,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 570,
+      "steps": 93816,
+      "length": 154,
+      "native_return": -154.0,
+      "reward_return": 5.580000041052699,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 571,
+      "steps": 93933,
+      "length": 117,
+      "native_return": -117.0,
+      "reward_return": 4.520000025629997,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 572,
+      "steps": 94133,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 3.8800000585615635,
+      "success": false,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 573,
+      "steps": 94333,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 4.63000001758337,
+      "success": false,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 574,
+      "steps": 94516,
+      "length": 183,
+      "native_return": -183.0,
+      "reward_return": 6.06000005453825,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 575,
+      "steps": 94716,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 4.310000043362379,
+      "success": false,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 576,
+      "steps": 94887,
+      "length": 171,
+      "native_return": -171.0,
+      "reward_return": 5.750000063329935,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 577,
+      "steps": 95087,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 4.500000042840838,
+      "success": false,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 578,
+      "steps": 95203,
+      "length": 116,
+      "native_return": -116.0,
+      "reward_return": 4.470000026747584,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 579,
+      "steps": 95380,
+      "length": 177,
+      "native_return": -177.0,
+      "reward_return": 6.050000032410026,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 580,
+      "steps": 95565,
+      "length": 185,
+      "native_return": -185.0,
+      "reward_return": 6.18000003695488,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 581,
+      "steps": 95685,
+      "length": 120,
+      "native_return": -120.0,
+      "reward_return": 4.260000022128224,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 582,
+      "steps": 95885,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 4.230000054463744,
+      "success": false,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 583,
+      "steps": 96028,
+      "length": 143,
+      "native_return": -143.0,
+      "reward_return": 4.900000037625432,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 584,
+      "steps": 96147,
+      "length": 119,
+      "native_return": -119.0,
+      "reward_return": 4.570000018924475,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 585,
+      "steps": 96347,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 4.190000036731362,
+      "success": false,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 586,
+      "steps": 96465,
+      "length": 118,
+      "native_return": -118.0,
+      "reward_return": 4.270000027492642,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 587,
+      "steps": 96665,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 4.030000049620867,
+      "success": false,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 588,
+      "steps": 96837,
+      "length": 172,
+      "native_return": -172.0,
+      "reward_return": 6.190000027418137,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 589,
+      "steps": 96965,
+      "length": 128,
+      "native_return": -128.0,
+      "reward_return": 4.42000001296401,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 590,
+      "steps": 97083,
+      "length": 118,
+      "native_return": -118.0,
+      "reward_return": 4.34000002220273,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 591,
+      "steps": 97200,
+      "length": 117,
+      "native_return": -117.0,
+      "reward_return": 4.510000022128224,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 592,
+      "steps": 97348,
+      "length": 148,
+      "native_return": -148.0,
+      "reward_return": 5.6300000343471766,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 593,
+      "steps": 97548,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 4.140000060200691,
+      "success": false,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 594,
+      "steps": 97715,
+      "length": 167,
+      "native_return": -167.0,
+      "reward_return": 6.120000062510371,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 595,
+      "steps": 97915,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 4.090000035241246,
+      "success": false,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 596,
+      "steps": 98037,
+      "length": 122,
+      "native_return": -122.0,
+      "reward_return": 4.640000019222498,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 597,
+      "steps": 98220,
+      "length": 183,
+      "native_return": -183.0,
+      "reward_return": 6.000000037252903,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 598,
+      "steps": 98374,
+      "length": 154,
+      "native_return": -154.0,
+      "reward_return": 5.630000038072467,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 599,
+      "steps": 98546,
+      "length": 172,
+      "native_return": -172.0,
+      "reward_return": 5.810000032186508,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 600,
+      "steps": 98703,
+      "length": 157,
+      "native_return": -157.0,
+      "reward_return": 5.880000028759241,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 601,
+      "steps": 98878,
+      "length": 175,
+      "native_return": -175.0,
+      "reward_return": 5.960000056773424,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 602,
+      "steps": 99078,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 4.180000061169267,
+      "success": false,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 603,
+      "steps": 99201,
+      "length": 123,
+      "native_return": -123.0,
+      "reward_return": 3.070000033825636,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 604,
+      "steps": 99375,
+      "length": 174,
+      "native_return": -174.0,
+      "reward_return": 6.300000049173832,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 605,
+      "steps": 99490,
+      "length": 115,
+      "native_return": -115.0,
+      "reward_return": 4.450000027194619,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 606,
+      "steps": 99603,
+      "length": 113,
+      "native_return": -113.0,
+      "reward_return": 4.540000025182962,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 607,
+      "steps": 99756,
+      "length": 153,
+      "native_return": -153.0,
+      "reward_return": 5.4500000309199095,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 608,
+      "steps": 99924,
+      "length": 168,
+      "native_return": -168.0,
+      "reward_return": 4.360000038519502,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 609,
+      "steps": 100112,
+      "length": 188,
+      "native_return": -188.0,
+      "reward_return": 4.630000041797757,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 610,
+      "steps": 100265,
+      "length": 153,
+      "native_return": -153.0,
+      "reward_return": 5.620000030845404,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 611,
+      "steps": 100465,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 4.870000049471855,
+      "success": false,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 612,
+      "steps": 100637,
+      "length": 172,
+      "native_return": -172.0,
+      "reward_return": 5.9500000346452,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 613,
+      "steps": 100755,
+      "length": 118,
+      "native_return": -118.0,
+      "reward_return": 4.430000018328428,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 614,
+      "steps": 100918,
+      "length": 163,
+      "native_return": -163.0,
+      "reward_return": 4.120000032708049,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 615,
+      "steps": 101118,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 4.7000000439584255,
+      "success": false,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 616,
+      "steps": 101247,
+      "length": 129,
+      "native_return": -129.0,
+      "reward_return": 3.8200000189244747,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 617,
+      "steps": 101413,
+      "length": 166,
+      "native_return": -166.0,
+      "reward_return": 6.080000031739473,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 618,
+      "steps": 101613,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 4.380000043660402,
+      "success": false,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 619,
+      "steps": 101774,
+      "length": 161,
+      "native_return": -161.0,
+      "reward_return": 5.890000032261014,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 620,
+      "steps": 101899,
+      "length": 125,
+      "native_return": -125.0,
+      "reward_return": 4.180000016465783,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 621,
+      "steps": 102099,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 4.350000035017729,
+      "success": false,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 622,
+      "steps": 102266,
+      "length": 167,
+      "native_return": -167.0,
+      "reward_return": 5.750000027939677,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 623,
+      "steps": 102394,
+      "length": 128,
+      "native_return": -128.0,
+      "reward_return": 3.550000024959445,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 624,
+      "steps": 102594,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 3.9200000446289778,
+      "success": false,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 625,
+      "steps": 102723,
+      "length": 129,
+      "native_return": -129.0,
+      "reward_return": 3.5200000181794167,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 626,
+      "steps": 102844,
+      "length": 121,
+      "native_return": -121.0,
+      "reward_return": 4.500000016763806,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 627,
+      "steps": 102973,
+      "length": 129,
+      "native_return": -129.0,
+      "reward_return": 3.5400000251829624,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 628,
+      "steps": 103173,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 4.230000039562583,
+      "success": false,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 629,
+      "steps": 103295,
+      "length": 122,
+      "native_return": -122.0,
+      "reward_return": 4.630000015720725,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 630,
+      "steps": 103462,
+      "length": 167,
+      "native_return": -167.0,
+      "reward_return": 6.03000002540648,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 631,
+      "steps": 103586,
+      "length": 124,
+      "native_return": -124.0,
+      "reward_return": 4.500000013038516,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 632,
+      "steps": 103770,
+      "length": 184,
+      "native_return": -184.0,
+      "reward_return": 5.1800000462681055,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 633,
+      "steps": 103951,
+      "length": 181,
+      "native_return": -181.0,
+      "reward_return": 4.710000043734908,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 634,
+      "steps": 104091,
+      "length": 140,
+      "native_return": -140.0,
+      "reward_return": 5.110000032931566,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 635,
+      "steps": 104258,
+      "length": 167,
+      "native_return": -167.0,
+      "reward_return": 6.150000032037497,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 636,
+      "steps": 104423,
+      "length": 165,
+      "native_return": -165.0,
+      "reward_return": 5.99000003375113,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 637,
+      "steps": 104540,
+      "length": 117,
+      "native_return": -117.0,
+      "reward_return": 4.200000019744039,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 638,
+      "steps": 104696,
+      "length": 156,
+      "native_return": -156.0,
+      "reward_return": 5.480000026524067,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 639,
+      "steps": 104858,
+      "length": 162,
+      "native_return": -162.0,
+      "reward_return": 5.830000031739473,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 640,
+      "steps": 105019,
+      "length": 161,
+      "native_return": -161.0,
+      "reward_return": 5.550000028684735,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 641,
+      "steps": 105176,
+      "length": 157,
+      "native_return": -157.0,
+      "reward_return": 5.290000032633543,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 642,
+      "steps": 105326,
+      "length": 150,
+      "native_return": -150.0,
+      "reward_return": 5.410000029951334,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 643,
+      "steps": 105480,
+      "length": 154,
+      "native_return": -154.0,
+      "reward_return": 5.540000027045608,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 644,
+      "steps": 105597,
+      "length": 117,
+      "native_return": -117.0,
+      "reward_return": 4.460000026971102,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 645,
+      "steps": 105758,
+      "length": 161,
+      "native_return": -161.0,
+      "reward_return": 5.840000031515956,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 646,
+      "steps": 105905,
+      "length": 147,
+      "native_return": -147.0,
+      "reward_return": 5.320000031962991,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 647,
+      "steps": 106105,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 4.380000054836273,
+      "success": false,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 648,
+      "steps": 106275,
+      "length": 170,
+      "native_return": -170.0,
+      "reward_return": 6.090000040829182,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 649,
+      "steps": 106427,
+      "length": 152,
+      "native_return": -152.0,
+      "reward_return": 5.420000039041042,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 650,
+      "steps": 106588,
+      "length": 161,
+      "native_return": -161.0,
+      "reward_return": 5.730000030249357,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 651,
+      "steps": 106754,
+      "length": 166,
+      "native_return": -166.0,
+      "reward_return": 5.880000030621886,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 652,
+      "steps": 106920,
+      "length": 166,
+      "native_return": -166.0,
+      "reward_return": 6.100000021979213,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 653,
+      "steps": 107037,
+      "length": 117,
+      "native_return": -117.0,
+      "reward_return": 4.500000016763806,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 654,
+      "steps": 107195,
+      "length": 158,
+      "native_return": -158.0,
+      "reward_return": 3.9300000462681055,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 655,
+      "steps": 107365,
+      "length": 170,
+      "native_return": -170.0,
+      "reward_return": 6.250000046566129,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 656,
+      "steps": 107528,
+      "length": 163,
+      "native_return": -163.0,
+      "reward_return": 5.820000039413571,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 657,
+      "steps": 107701,
+      "length": 173,
+      "native_return": -173.0,
+      "reward_return": 6.1100000366568565,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 658,
+      "steps": 107824,
+      "length": 123,
+      "native_return": -123.0,
+      "reward_return": 3.4600000269711018,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 659,
+      "steps": 107975,
+      "length": 151,
+      "native_return": -151.0,
+      "reward_return": 5.520000031217933,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 660,
+      "steps": 108130,
+      "length": 155,
+      "native_return": -155.0,
+      "reward_return": 5.500000020489097,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 661,
+      "steps": 108252,
+      "length": 122,
+      "native_return": -122.0,
+      "reward_return": 3.84000001847744,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 662,
+      "steps": 108409,
+      "length": 157,
+      "native_return": -157.0,
+      "reward_return": 5.590000020340085,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 663,
+      "steps": 108609,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 5.410000041127205,
+      "success": false,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 664,
+      "steps": 108772,
+      "length": 163,
+      "native_return": -163.0,
+      "reward_return": 5.5900000389665365,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 665,
+      "steps": 108890,
+      "length": 118,
+      "native_return": -118.0,
+      "reward_return": 4.550000017508864,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 666,
+      "steps": 109005,
+      "length": 115,
+      "native_return": -115.0,
+      "reward_return": 4.460000021383166,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 667,
+      "steps": 109123,
+      "length": 118,
+      "native_return": -118.0,
+      "reward_return": 4.110000021755695,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 668,
+      "steps": 109250,
+      "length": 127,
+      "native_return": -127.0,
+      "reward_return": 3.5500000230968,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 669,
+      "steps": 109367,
+      "length": 117,
+      "native_return": -117.0,
+      "reward_return": 4.030000023543835,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 670,
+      "steps": 109526,
+      "length": 159,
+      "native_return": -159.0,
+      "reward_return": 4.400000041350722,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 671,
+      "steps": 109645,
+      "length": 119,
+      "native_return": -119.0,
+      "reward_return": 4.320000015199184,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 672,
+      "steps": 109797,
+      "length": 152,
+      "native_return": -152.0,
+      "reward_return": 5.76000003144145,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 673,
+      "steps": 109919,
+      "length": 122,
+      "native_return": -122.0,
+      "reward_return": 3.8000000175088644,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 674,
+      "steps": 110088,
+      "length": 169,
+      "native_return": -169.0,
+      "reward_return": 6.0000000316649675,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 675,
+      "steps": 110288,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 4.940000040456653,
+      "success": false,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 676,
+      "steps": 110488,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 4.270000042393804,
+      "success": false,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 677,
+      "steps": 110614,
+      "length": 126,
+      "native_return": -126.0,
+      "reward_return": 3.7400000169873238,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 678,
+      "steps": 110777,
+      "length": 163,
+      "native_return": -163.0,
+      "reward_return": 6.040000028908253,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 679,
+      "steps": 110891,
+      "length": 114,
+      "native_return": -114.0,
+      "reward_return": 4.580000022426248,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 680,
+      "steps": 111021,
+      "length": 130,
+      "native_return": -130.0,
+      "reward_return": 3.7000000197440386,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 681,
+      "steps": 111144,
+      "length": 123,
+      "native_return": -123.0,
+      "reward_return": 4.500000009313226,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 682,
+      "steps": 111262,
+      "length": 118,
+      "native_return": -118.0,
+      "reward_return": 4.3300000205636024,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 683,
+      "steps": 111462,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 5.240000035613775,
+      "success": false,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 684,
+      "steps": 111583,
+      "length": 121,
+      "native_return": -121.0,
+      "reward_return": 4.490000015124679,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 685,
+      "steps": 111708,
+      "length": 125,
+      "native_return": -125.0,
+      "reward_return": 4.490000011399388,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 686,
+      "steps": 111826,
+      "length": 118,
+      "native_return": -118.0,
+      "reward_return": 4.560000015422702,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 687,
+      "steps": 111981,
+      "length": 155,
+      "native_return": -155.0,
+      "reward_return": 5.100000012665987,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 688,
+      "steps": 112181,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 5.210000034421682,
+      "success": false,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 689,
+      "steps": 112303,
+      "length": 122,
+      "native_return": -122.0,
+      "reward_return": 4.59000001475215,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 690,
+      "steps": 112471,
+      "length": 168,
+      "native_return": -168.0,
+      "reward_return": 5.650000035762787,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 691,
+      "steps": 112595,
+      "length": 124,
+      "native_return": -124.0,
+      "reward_return": 4.590000011026859,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 692,
+      "steps": 112708,
+      "length": 113,
+      "native_return": -113.0,
+      "reward_return": 4.640000024810433,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 693,
+      "steps": 112908,
+      "length": 200,
+      "native_return": -200.0,
+      "reward_return": 4.890000037848949,
+      "success": false,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 694,
+      "steps": 113035,
+      "length": 127,
+      "native_return": -127.0,
+      "reward_return": 4.5400000140070915,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 695,
+      "steps": 113149,
+      "length": 114,
+      "native_return": -114.0,
+      "reward_return": 4.6100000236183405,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 696,
+      "steps": 113283,
+      "length": 134,
+      "native_return": -134.0,
+      "reward_return": 3.8800000194460154,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 697,
+      "steps": 113438,
+      "length": 155,
+      "native_return": -155.0,
+      "reward_return": 5.9100000355392694,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 698,
+      "steps": 113558,
+      "length": 120,
+      "native_return": -120.0,
+      "reward_return": 4.55000002682209,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 699,
+      "steps": 113677,
+      "length": 119,
+      "native_return": -119.0,
+      "reward_return": 4.510000016540289,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 700,
+      "steps": 113792,
+      "length": 115,
+      "native_return": -115.0,
+      "reward_return": 4.670000020414591,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 701,
+      "steps": 113953,
+      "length": 161,
+      "native_return": -161.0,
+      "reward_return": 5.560000021010637,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 702,
+      "steps": 114090,
+      "length": 137,
+      "native_return": -137.0,
+      "reward_return": 4.379999997094274,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 703,
+      "steps": 114252,
+      "length": 162,
+      "native_return": -162.0,
+      "reward_return": 5.640000021085143,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 704,
+      "steps": 114385,
+      "length": 133,
+      "native_return": -133.0,
+      "reward_return": 4.480000017210841,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 705,
+      "steps": 114498,
+      "length": 113,
+      "native_return": -113.0,
+      "reward_return": 4.670000024139881,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 706,
+      "steps": 114612,
+      "length": 114,
+      "native_return": -114.0,
+      "reward_return": 4.560000024735928,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 707,
+      "steps": 114731,
+      "length": 119,
+      "native_return": -119.0,
+      "reward_return": 4.540000017732382,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 708,
+      "steps": 114902,
+      "length": 171,
+      "native_return": -171.0,
+      "reward_return": 6.180000022053719,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 709,
+      "steps": 115100,
+      "length": 198,
+      "native_return": -198.0,
+      "reward_return": 6.290000047534704,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 710,
+      "steps": 115219,
+      "length": 119,
+      "native_return": -119.0,
+      "reward_return": 4.640000015497208,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 711,
+      "steps": 115346,
+      "length": 127,
+      "native_return": -127.0,
+      "reward_return": 4.770000010728836,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 712,
+      "steps": 115465,
+      "length": 119,
+      "native_return": -119.0,
+      "reward_return": 4.380000023171306,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 713,
+      "steps": 115579,
+      "length": 114,
+      "native_return": -114.0,
+      "reward_return": 4.6100000236183405,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 714,
+      "steps": 115701,
+      "length": 122,
+      "native_return": -122.0,
+      "reward_return": 4.5500000193715096,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 715,
+      "steps": 115815,
+      "length": 114,
+      "native_return": -114.0,
+      "reward_return": 4.3900000266730785,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 716,
+      "steps": 115938,
+      "length": 123,
+      "native_return": -123.0,
+      "reward_return": 4.520000012591481,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 717,
+      "steps": 116068,
+      "length": 130,
+      "native_return": -130.0,
+      "reward_return": 4.0400000140070915,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 718,
+      "steps": 116224,
+      "length": 156,
+      "native_return": -156.0,
+      "reward_return": 5.440000027418137,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 719,
+      "steps": 116399,
+      "length": 175,
+      "native_return": -175.0,
+      "reward_return": 6.2800000458955765,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 720,
+      "steps": 116564,
+      "length": 165,
+      "native_return": -165.0,
+      "reward_return": 5.440000019967556,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 721,
+      "steps": 116684,
+      "length": 120,
+      "native_return": -120.0,
+      "reward_return": 4.390000015497208,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 722,
+      "steps": 116853,
+      "length": 169,
+      "native_return": -169.0,
+      "reward_return": 6.080000037327409,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 723,
+      "steps": 117003,
+      "length": 150,
+      "native_return": -150.0,
+      "reward_return": 5.390000032261014,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 724,
+      "steps": 117131,
+      "length": 128,
+      "native_return": -128.0,
+      "reward_return": 4.370000017806888,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 725,
+      "steps": 117282,
+      "length": 151,
+      "native_return": -151.0,
+      "reward_return": 5.840000031515956,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 726,
+      "steps": 117441,
+      "length": 159,
+      "native_return": -159.0,
+      "reward_return": 6.03000002913177,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 727,
+      "steps": 117596,
+      "length": 155,
+      "native_return": -155.0,
+      "reward_return": 5.290000028908253,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 728,
+      "steps": 117757,
+      "length": 161,
+      "native_return": -161.0,
+      "reward_return": 5.710000013932586,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 729,
+      "steps": 117927,
+      "length": 170,
+      "native_return": -170.0,
+      "reward_return": 6.300000036135316,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 730,
+      "steps": 118048,
+      "length": 121,
+      "native_return": -121.0,
+      "reward_return": 4.350000021979213,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 731,
+      "steps": 118237,
+      "length": 189,
+      "native_return": -189.0,
+      "reward_return": 6.700000023469329,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 732,
+      "steps": 118358,
+      "length": 121,
+      "native_return": -121.0,
+      "reward_return": 4.410000022500753,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 733,
+      "steps": 118546,
+      "length": 188,
+      "native_return": -188.0,
+      "reward_return": 6.540000021457672,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 734,
+      "steps": 118698,
+      "length": 152,
+      "native_return": -152.0,
+      "reward_return": 5.420000018551946,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 735,
+      "steps": 118819,
+      "length": 121,
+      "native_return": -121.0,
+      "reward_return": 4.470000019297004,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 736,
+      "steps": 118979,
+      "length": 160,
+      "native_return": -160.0,
+      "reward_return": 5.59000001475215,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 737,
+      "steps": 119147,
+      "length": 168,
+      "native_return": -168.0,
+      "reward_return": 5.6400000266730785,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 738,
+      "steps": 119277,
+      "length": 130,
+      "native_return": -130.0,
+      "reward_return": 4.149999994784594,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 739,
+      "steps": 119407,
+      "length": 130,
+      "native_return": -130.0,
+      "reward_return": 4.36000001616776,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 740,
+      "steps": 119535,
+      "length": 128,
+      "native_return": -128.0,
+      "reward_return": 4.480000007897615,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 741,
+      "steps": 119687,
+      "length": 152,
+      "native_return": -152.0,
+      "reward_return": 5.550000028684735,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 742,
+      "steps": 119806,
+      "length": 119,
+      "native_return": -119.0,
+      "reward_return": 4.350000021979213,
+      "success": true,
+      "epsilon": 0.05
+    },
+    {
+      "episode": 743,
+      "steps": 119929,
+      "length": 123,
+      "native_return": -123.0,
+      "reward_return": 4.640000015497208,
+      "success": true,
+      "epsilon": 0.05
+    }
+  ],
+  "checkpoints": [
+    {
+      "steps": 0,
+      "episode": 0,
+      "evaluation": {
+        "episodes": 20,
+        "seed_start": 10000,
+        "native_return_mean": -200.0,
+        "native_return_std": 0.0,
+        "success_rate": 0.0,
+        "mean_steps": 200.0,
+        "returns": [
+          -200.0,
+          -200.0,
+          -200.0,
+          -200.0,
+          -200.0,
+          -200.0,
+          -200.0,
+          -200.0,
+          -200.0,
+          -200.0,
+          -200.0,
+          -200.0,
+          -200.0,
+          -200.0,
+          -200.0,
+          -200.0,
+          -200.0,
+          -200.0,
+          -200.0,
+          -200.0
+        ],
+        "successes": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "lengths": [
+          200,
+          200,
+          200,
+          200,
+          200,
+          200,
+          200,
+          200,
+          200,
+          200,
+          200,
+          200,
+          200,
+          200,
+          200,
+          200,
+          200,
+          200,
+          200,
+          200
+        ]
+      },
+      "model_file": "checkpoints/step-0000000.zip"
+    },
+    {
+      "steps": 10000,
+      "episode": 50,
+      "evaluation": {
+        "episodes": 20,
+        "seed_start": 10000,
+        "native_return_mean": -141.65,
+        "native_return_std": 33.02464988459378,
+        "success_rate": 1.0,
+        "mean_steps": 141.65,
+        "returns": [
+          -178.0,
+          -96.0,
+          -104.0,
+          -98.0,
+          -91.0,
+          -161.0,
+          -160.0,
+          -92.0,
+          -130.0,
+          -180.0,
+          -160.0,
+          -176.0,
+          -160.0,
+          -170.0,
+          -160.0,
+          -174.0,
+          -160.0,
+          -113.0,
+          -170.0,
+          -100.0
+        ],
+        "successes": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "lengths": [
+          178,
+          96,
+          104,
+          98,
+          91,
+          161,
+          160,
+          92,
+          130,
+          180,
+          160,
+          176,
+          160,
+          170,
+          160,
+          174,
+          160,
+          113,
+          170,
+          100
+        ]
+      },
+      "model_file": "checkpoints/step-0010000.zip"
+    },
+    {
+      "steps": 20000,
+      "episode": 100,
+      "evaluation": {
+        "episodes": 20,
+        "seed_start": 10000,
+        "native_return_mean": -134.2,
+        "native_return_std": 27.315929418564547,
+        "success_rate": 1.0,
+        "mean_steps": 134.2,
+        "returns": [
+          -155.0,
+          -93.0,
+          -101.0,
+          -95.0,
+          -87.0,
+          -147.0,
+          -146.0,
+          -88.0,
+          -160.0,
+          -155.0,
+          -146.0,
+          -155.0,
+          -145.0,
+          -153.0,
+          -146.0,
+          -154.0,
+          -145.0,
+          -164.0,
+          -153.0,
+          -96.0
+        ],
+        "successes": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "lengths": [
+          155,
+          93,
+          101,
+          95,
+          87,
+          147,
+          146,
+          88,
+          160,
+          155,
+          146,
+          155,
+          145,
+          153,
+          146,
+          154,
+          145,
+          164,
+          153,
+          96
+        ]
+      },
+      "model_file": "checkpoints/step-0020000.zip"
+    },
+    {
+      "steps": 30000,
+      "episode": 150,
+      "evaluation": {
+        "episodes": 20,
+        "seed_start": 10000,
+        "native_return_mean": -128.25,
+        "native_return_std": 23.093018425489554,
+        "success_rate": 1.0,
+        "mean_steps": 128.25,
+        "returns": [
+          -146.0,
+          -99.0,
+          -150.0,
+          -160.0,
+          -87.0,
+          -113.0,
+          -110.0,
+          -88.0,
+          -148.0,
+          -146.0,
+          -110.0,
+          -145.0,
+          -109.0,
+          -144.0,
+          -110.0,
+          -145.0,
+          -110.0,
+          -149.0,
+          -144.0,
+          -152.0
+        ],
+        "successes": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "lengths": [
+          146,
+          99,
+          150,
+          160,
+          87,
+          113,
+          110,
+          88,
+          148,
+          146,
+          110,
+          145,
+          109,
+          144,
+          110,
+          145,
+          110,
+          149,
+          144,
+          152
+        ]
+      },
+      "model_file": "checkpoints/step-0030000.zip"
+    },
+    {
+      "steps": 40000,
+      "episode": 204,
+      "evaluation": {
+        "episodes": 20,
+        "seed_start": 10000,
+        "native_return_mean": -147.75,
+        "native_return_std": 22.75274708689041,
+        "success_rate": 1.0,
+        "mean_steps": 147.75,
+        "returns": [
+          -162.0,
+          -165.0,
+          -162.0,
+          -162.0,
+          -178.0,
+          -114.0,
+          -113.0,
+          -168.0,
+          -162.0,
+          -163.0,
+          -114.0,
+          -161.0,
+          -113.0,
+          -156.0,
+          -114.0,
+          -159.0,
+          -114.0,
+          -159.0,
+          -156.0,
+          -160.0
+        ],
+        "successes": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "lengths": [
+          162,
+          165,
+          162,
+          162,
+          178,
+          114,
+          113,
+          168,
+          162,
+          163,
+          114,
+          161,
+          113,
+          156,
+          114,
+          159,
+          114,
+          159,
+          156,
+          160
+        ]
+      },
+      "model_file": "checkpoints/step-0040000.zip"
+    },
+    {
+      "steps": 50000,
+      "episode": 262,
+      "evaluation": {
+        "episodes": 20,
+        "seed_start": 10000,
+        "native_return_mean": -120.9,
+        "native_return_std": 3.8716921365211876,
+        "success_rate": 1.0,
+        "mean_steps": 120.9,
+        "returns": [
+          -123.0,
+          -123.0,
+          -123.0,
+          -123.0,
+          -126.0,
+          -116.0,
+          -115.0,
+          -126.0,
+          -122.0,
+          -123.0,
+          -115.0,
+          -123.0,
+          -115.0,
+          -123.0,
+          -115.0,
+          -123.0,
+          -115.0,
+          -123.0,
+          -123.0,
+          -123.0
+        ],
+        "successes": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "lengths": [
+          123,
+          123,
+          123,
+          123,
+          126,
+          116,
+          115,
+          126,
+          122,
+          123,
+          115,
+          123,
+          115,
+          123,
+          115,
+          123,
+          115,
+          123,
+          123,
+          123
+        ]
+      },
+      "model_file": "checkpoints/step-0050000.zip"
+    },
+    {
+      "steps": 60000,
+      "episode": 330,
+      "evaluation": {
+        "episodes": 20,
+        "seed_start": 10000,
+        "native_return_mean": -126.5,
+        "native_return_std": 25.27152547829276,
+        "success_rate": 1.0,
+        "mean_steps": 126.5,
+        "returns": [
+          -118.0,
+          -180.0,
+          -158.0,
+          -164.0,
+          -87.0,
+          -113.0,
+          -112.0,
+          -88.0,
+          -153.0,
+          -118.0,
+          -111.0,
+          -119.0,
+          -111.0,
+          -120.0,
+          -111.0,
+          -119.0,
+          -111.0,
+          -155.0,
+          -120.0,
+          -162.0
+        ],
+        "successes": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "lengths": [
+          118,
+          180,
+          158,
+          164,
+          87,
+          113,
+          112,
+          88,
+          153,
+          118,
+          111,
+          119,
+          111,
+          120,
+          111,
+          119,
+          111,
+          155,
+          120,
+          162
+        ]
+      },
+      "model_file": "checkpoints/step-0060000.zip"
+    },
+    {
+      "steps": 70000,
+      "episode": 406,
+      "evaluation": {
+        "episodes": 20,
+        "seed_start": 10000,
+        "native_return_mean": -130.3,
+        "native_return_std": 14.174272468102199,
+        "success_rate": 1.0,
+        "mean_steps": 130.3,
+        "returns": [
+          -135.0,
+          -145.0,
+          -136.0,
+          -144.0,
+          -151.0,
+          -111.0,
+          -110.0,
+          -150.0,
+          -136.0,
+          -135.0,
+          -110.0,
+          -134.0,
+          -110.0,
+          -133.0,
+          -110.0,
+          -133.0,
+          -110.0,
+          -136.0,
+          -133.0,
+          -144.0
+        ],
+        "successes": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "lengths": [
+          135,
+          145,
+          136,
+          144,
+          151,
+          111,
+          110,
+          150,
+          136,
+          135,
+          110,
+          134,
+          110,
+          133,
+          110,
+          133,
+          110,
+          136,
+          133,
+          144
+        ]
+      },
+      "model_file": "checkpoints/step-0070000.zip"
+    },
+    {
+      "steps": 80000,
+      "episode": 477,
+      "evaluation": {
+        "episodes": 20,
+        "seed_start": 10000,
+        "native_return_mean": -147.5,
+        "native_return_std": 22.75192299565028,
+        "success_rate": 1.0,
+        "mean_steps": 147.5,
+        "returns": [
+          -157.0,
+          -167.0,
+          -167.0,
+          -169.0,
+          -167.0,
+          -115.0,
+          -114.0,
+          -166.0,
+          -162.0,
+          -158.0,
+          -113.0,
+          -157.0,
+          -113.0,
+          -154.0,
+          -113.0,
+          -157.0,
+          -113.0,
+          -163.0,
+          -154.0,
+          -171.0
+        ],
+        "successes": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "lengths": [
+          157,
+          167,
+          167,
+          169,
+          167,
+          115,
+          114,
+          166,
+          162,
+          158,
+          113,
+          157,
+          113,
+          154,
+          113,
+          157,
+          113,
+          163,
+          154,
+          171
+        ]
+      },
+      "model_file": "checkpoints/step-0080000.zip"
+    },
+    {
+      "steps": 90000,
+      "episode": 543,
+      "evaluation": {
+        "episodes": 20,
+        "seed_start": 10000,
+        "native_return_mean": -134.95,
+        "native_return_std": 27.22402431676845,
+        "success_rate": 0.9,
+        "mean_steps": 134.95,
+        "returns": [
+          -122.0,
+          -125.0,
+          -125.0,
+          -125.0,
+          -200.0,
+          -116.0,
+          -115.0,
+          -200.0,
+          -124.0,
+          -122.0,
+          -115.0,
+          -122.0,
+          -114.0,
+          -167.0,
+          -115.0,
+          -162.0,
+          -114.0,
+          -123.0,
+          -167.0,
+          -126.0
+        ],
+        "successes": [
+          true,
+          true,
+          true,
+          true,
+          false,
+          true,
+          true,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "lengths": [
+          122,
+          125,
+          125,
+          125,
+          200,
+          116,
+          115,
+          200,
+          124,
+          122,
+          115,
+          122,
+          114,
+          167,
+          115,
+          162,
+          114,
+          123,
+          167,
+          126
+        ]
+      },
+      "model_file": "checkpoints/step-0090000.zip"
+    },
+    {
+      "steps": 100000,
+      "episode": 608,
+      "evaluation": {
+        "episodes": 20,
+        "seed_start": 10000,
+        "native_return_mean": -159.75,
+        "native_return_std": 18.73999733191016,
+        "success_rate": 1.0,
+        "mean_steps": 159.75,
+        "returns": [
+          -164.0,
+          -173.0,
+          -178.0,
+          -174.0,
+          -175.0,
+          -145.0,
+          -133.0,
+          -177.0,
+          -181.0,
+          -165.0,
+          -133.0,
+          -163.0,
+          -129.0,
+          -157.0,
+          -133.0,
+          -160.0,
+          -132.0,
+          -190.0,
+          -157.0,
+          -176.0
+        ],
+        "successes": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "lengths": [
+          164,
+          173,
+          178,
+          174,
+          175,
+          145,
+          133,
+          177,
+          181,
+          165,
+          133,
+          163,
+          129,
+          157,
+          133,
+          160,
+          132,
+          190,
+          157,
+          176
+        ]
+      },
+      "model_file": "checkpoints/step-0100000.zip"
+    },
+    {
+      "steps": 110000,
+      "episode": 673,
+      "evaluation": {
+        "episodes": 20,
+        "seed_start": 10000,
+        "native_return_mean": -146.4,
+        "native_return_std": 26.496037439587077,
+        "success_rate": 0.9,
+        "mean_steps": 146.4,
+        "returns": [
+          -200.0,
+          -163.0,
+          -163.0,
+          -164.0,
+          -162.0,
+          -119.0,
+          -119.0,
+          -162.0,
+          -163.0,
+          -200.0,
+          -118.0,
+          -129.0,
+          -118.0,
+          -127.0,
+          -118.0,
+          -130.0,
+          -118.0,
+          -164.0,
+          -127.0,
+          -164.0
+        ],
+        "successes": [
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "lengths": [
+          200,
+          163,
+          163,
+          164,
+          162,
+          119,
+          119,
+          162,
+          163,
+          200,
+          118,
+          129,
+          118,
+          127,
+          118,
+          130,
+          118,
+          164,
+          127,
+          164
+        ]
+      },
+      "model_file": "checkpoints/step-0110000.zip"
+    },
+    {
+      "steps": 120000,
+      "episode": 743,
+      "evaluation": {
+        "episodes": 20,
+        "seed_start": 10000,
+        "native_return_mean": -153.55,
+        "native_return_std": 24.473403931615234,
+        "success_rate": 0.9,
+        "mean_steps": 153.55,
+        "returns": [
+          -161.0,
+          -164.0,
+          -163.0,
+          -164.0,
+          -200.0,
+          -121.0,
+          -120.0,
+          -200.0,
+          -163.0,
+          -161.0,
+          -120.0,
+          -161.0,
+          -120.0,
+          -163.0,
+          -120.0,
+          -161.0,
+          -120.0,
+          -163.0,
+          -163.0,
+          -163.0
+        ],
+        "successes": [
+          true,
+          true,
+          true,
+          true,
+          false,
+          true,
+          true,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "lengths": [
+          161,
+          164,
+          163,
+          164,
+          200,
+          121,
+          120,
+          200,
+          163,
+          161,
+          120,
+          161,
+          120,
+          163,
+          120,
+          161,
+          120,
+          163,
+          163,
+          163
+        ]
+      },
+      "model_file": "checkpoints/step-0120000.zip"
+    }
+  ],
+  "test": {
+    "episodes": 100,
+    "seed_start": 100000,
+    "native_return_mean": -154.02,
+    "native_return_std": 28.335483055702436,
+    "success_rate": 0.84,
+    "mean_steps": 154.02,
+    "returns": [
+      -120.0,
+      -200.0,
+      -172.0,
+      -119.0,
+      -119.0,
+      -161.0,
+      -163.0,
+      -122.0,
+      -174.0,
+      -161.0,
+      -174.0,
+      -120.0,
+      -121.0,
+      -173.0,
+      -161.0,
+      -124.0,
+      -162.0,
+      -163.0,
+      -121.0,
+      -122.0,
+      -167.0,
+      -164.0,
+      -124.0,
+      -120.0,
+      -123.0,
+      -121.0,
+      -163.0,
+      -124.0,
+      -168.0,
+      -120.0,
+      -120.0,
+      -200.0,
+      -121.0,
+      -120.0,
+      -200.0,
+      -119.0,
+      -164.0,
+      -163.0,
+      -119.0,
+      -120.0,
+      -120.0,
+      -200.0,
+      -160.0,
+      -174.0,
+      -161.0,
+      -163.0,
+      -174.0,
+      -120.0,
+      -120.0,
+      -200.0,
+      -165.0,
+      -120.0,
+      -161.0,
+      -157.0,
+      -161.0,
+      -123.0,
+      -121.0,
+      -200.0,
+      -200.0,
+      -200.0,
+      -200.0,
+      -162.0,
+      -163.0,
+      -173.0,
+      -166.0,
+      -165.0,
+      -121.0,
+      -162.0,
+      -200.0,
+      -200.0,
+      -163.0,
+      -163.0,
+      -163.0,
+      -123.0,
+      -157.0,
+      -161.0,
+      -173.0,
+      -166.0,
+      -163.0,
+      -161.0,
+      -120.0,
+      -157.0,
+      -120.0,
+      -124.0,
+      -163.0,
+      -120.0,
+      -163.0,
+      -164.0,
+      -124.0,
+      -121.0,
+      -120.0,
+      -200.0,
+      -121.0,
+      -161.0,
+      -164.0,
+      -200.0,
+      -200.0,
+      -163.0,
+      -200.0,
+      -200.0
+    ],
+    "successes": [
+      true,
+      false,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      false,
+      true,
+      true,
+      false,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      false,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      false,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      false,
+      false,
+      false,
+      false,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      false,
+      false,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      false,
+      true,
+      true,
+      true,
+      false,
+      false,
+      true,
+      false,
+      false
+    ],
+    "lengths": [
+      120,
+      200,
+      172,
+      119,
+      119,
+      161,
+      163,
+      122,
+      174,
+      161,
+      174,
+      120,
+      121,
+      173,
+      161,
+      124,
+      162,
+      163,
+      121,
+      122,
+      167,
+      164,
+      124,
+      120,
+      123,
+      121,
+      163,
+      124,
+      168,
+      120,
+      120,
+      200,
+      121,
+      120,
+      200,
+      119,
+      164,
+      163,
+      119,
+      120,
+      120,
+      200,
+      160,
+      174,
+      161,
+      163,
+      174,
+      120,
+      120,
+      200,
+      165,
+      120,
+      161,
+      157,
+      161,
+      123,
+      121,
+      200,
+      200,
+      200,
+      200,
+      162,
+      163,
+      173,
+      166,
+      165,
+      121,
+      162,
+      200,
+      200,
+      163,
+      163,
+      163,
+      123,
+      157,
+      161,
+      173,
+      166,
+      163,
+      161,
+      120,
+      157,
+      120,
+      124,
+      163,
+      120,
+      163,
+      164,
+      124,
+      121,
+      120,
+      200,
+      121,
+      161,
+      164,
+      200,
+      200,
+      163,
+      200,
+      200
+    ]
+  },
+  "reward": {
+    "provider": "rules",
+    "rubric_hash": "bb76278b1d8626133c3de2fb83552a522b6616017c50a0e61e2e6265cf9d18b6",
+    "answers": 29,
+    "cache_hits": 119971,
+    "current_session": {
+      "api_calls": 0,
+      "cost_usd": 0.0
+    },
+    "source_usage": {},
+    "served_models": [
+      "classic-transition-rubrics-v1"
+    ]
+  },
+  "duration_seconds": 73.843,
+  "versions": {
+    "gymnasium": "1.3.0",
+    "stable-baselines3": "2.9.0",
+    "torch": "2.14.0+cpu",
+    "numpy": "2.5.3"
+  },
+  "python": "3.12.14",
+  "evaluation_note": "Development seeds 10000+; final held-out seeds 100000+. Native reward; no judge calls."
+}

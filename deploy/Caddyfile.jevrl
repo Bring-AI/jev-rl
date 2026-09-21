@@ -1,0 +1,15 @@
+jevrl.com {
+	root * /srv/jevrl.com/current
+	encode zstd gzip
+	header {
+		-Server
+		X-Content-Type-Options nosniff
+		Referrer-Policy strict-origin-when-cross-origin
+		Cache-Control "no-cache"
+	}
+	file_server
+}
+
+www.jevrl.com {
+	redir https://jevrl.com{uri} permanent
+}

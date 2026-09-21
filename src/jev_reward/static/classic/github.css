@@ -1,0 +1,6 @@
+.github-link{display:inline-flex;align-items:center;gap:8px;flex-shrink:0;border:1px solid var(--line);border-radius:6px;padding:9px 12px;font-size:12px;font-weight:600;background:#fafbf7;transition:border-color .15s,background .15s}
+.github-link:hover{border-color:var(--green);background:#e4eddc}
+.github-icon{width:18px;height:18px;fill:currentColor}
+.github-stars{display:inline-flex;align-items:center;gap:5px;border-left:1px solid var(--line);padding-left:9px;font-variant-numeric:tabular-nums}
+.github-stars svg{width:14px;height:14px;fill:none;stroke:var(--green);stroke-width:1.5;stroke-linejoin:round}
+@media(max-width:780px){header{height:auto;min-height:76px;flex-wrap:wrap;gap:12px;padding:16px 0}header nav{order:3;width:100%;justify-content:center;padding-top:4px}.github-link{margin-left:auto}}

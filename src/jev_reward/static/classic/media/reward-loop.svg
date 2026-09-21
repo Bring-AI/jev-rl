@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1320" height="530" viewBox="0 0 1320 530" role="img" aria-labelledby="title desc">
+  <title id="title">JEV supplies the reinforcement learning reward</title>
+  <desc id="desc">The agent acts in the environment and receives observations. Environment transitions are scored by JEV. Its typed score distribution supplies the reward used to update the agent. Fast, typesafe, and accurate.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9" fill="none" stroke="#7a8c7c" stroke-width="1.7"/></marker>
+    <marker id="green" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9" fill="none" stroke="#267c56" stroke-width="1.7"/></marker>
+    <pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1" fill="#dfe5da"/></pattern>
+  </defs>
+  <rect width="1320" height="530" rx="18" fill="#f4f5ef"/>
+  <rect x="22" y="76" width="1276" height="428" rx="14" fill="url(#dots)"/>
+  <g font-family="Inter, DejaVu Sans, Arial, sans-serif">
+    <text x="48" y="44" fill="#172820" font-size="24" font-weight="700">JEV is the reward source.</text>
+    <text x="1270" y="44" text-anchor="end" fill="#66766b" font-size="12" letter-spacing="2">THE JevRL LEARNING LOOP</text>
+
+    <g fill="none" stroke="#7a8c7c" stroke-width="2.5" marker-end="url(#arrow)">
+      <path d="M 275 205 V 166 Q 275 146 295 146 H 465"/>
+      <path d="M 475 195 H 415 Q 395 195 395 215 V 275 Q 395 295 375 295 H 340"/>
+      <path d="M 765 146 H 1080 Q 1100 146 1100 166 V 185"/>
+    </g>
+    <g fill="#66766b" font-size="14">
+      <text x="333" y="133">action aₜ</text>
+      <text x="420" y="270">state sₜ</text>
+      <text x="813" y="130">observed transition</text>
+    </g>
+    <g fill="none" stroke="#267c56" stroke-width="4" marker-end="url(#green)">
+      <path d="M 950 320 H 885 Q 865 320 865 340 V 400 Q 865 420 845 420 H 795"/>
+      <path d="M 505 420 H 220 Q 200 420 200 400 V 350"/>
+    </g>
+    <text x="856" y="303" fill="#267c56" text-anchor="middle" font-size="13" font-weight="600">JEV score</text>
+    <text x="350" y="405" fill="#267c56" text-anchor="middle" font-size="14" font-weight="600">learn from JEV reward</text>
+
+    <rect x="70" y="205" width="260" height="135" rx="13" fill="#fff" stroke="#ced8c9"/>
+    <circle cx="107" cy="241" r="12" fill="#e8eddf"/><path d="M 101 241 H 113 M 107 235 V 247" stroke="#6b8265" stroke-width="2"/>
+    <text x="133" y="248" fill="#172820" font-size="26" font-weight="700">Agent</text>
+    <text x="95" y="280" fill="#66766b" font-size="15">DQN policy</text>
+    <text x="95" y="307" fill="#66766b" font-size="13">Observe → act → update</text>
+
+    <rect x="475" y="84" width="290" height="137" rx="13" fill="#fff" stroke="#ced8c9"/>
+    <text x="500" y="127" fill="#172820" font-size="26" font-weight="700">Environment</text>
+    <text x="500" y="160" fill="#66766b" font-size="14">CartPole · MountainCar</text>
+    <text x="500" y="184" fill="#66766b" font-size="14">Acrobot · FrozenLake</text>
+
+    <rect x="950" y="195" width="300" height="187" rx="14" fill="#172e23"/>
+    <text x="975" y="225" fill="#c8ed81" font-size="10" letter-spacing="2">TYPESAFE · REWARD JUDGE</text>
+    <text x="975" y="274" fill="#fff" font-size="43" font-weight="700">JEV</text>
+    <text x="975" y="309" fill="#c8ed81" font-size="16" font-weight="600">Fast, typesafe, and accurate.</text>
+    <text x="975" y="341" fill="#bbcfbf" font-size="13">Transition → typed Score</text>
+    <text x="975" y="362" fill="#bbcfbf" font-size="13">Exact-input judgments are reused.</text>
+
+    <rect x="505" y="365" width="280" height="107" rx="13" fill="#e3eed6" stroke="#267c56" stroke-width="2"/>
+    <text x="530" y="397" fill="#267c56" font-size="11" font-weight="700" letter-spacing="1.2">REWARD SUPPLIED BY JEV</text>
+    <text x="530" y="433" fill="#172820" font-size="19" font-weight="600">r = Σ p(level) × value</text>
+    <text x="530" y="456" fill="#52734f" font-size="11">The only reward used by the JEV agent.</text>
+    <text x="48" y="511" fill="#66766b" font-size="12">Native environment reward is used for evaluation; JEV scores drive learning.</text>
+  </g>
+</svg>

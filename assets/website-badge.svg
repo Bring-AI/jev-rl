@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="192" height="30" viewBox="0 0 192 30" role="img" aria-label="Website: jevrl.com">
+  <title>Visit jevrl.com</title>
+  <clipPath id="round"><rect width="192" height="30" rx="6"/></clipPath>
+  <g clip-path="url(#round)"><path fill="#172820" d="M0 0h89v30H0z"/><path fill="#267c56" d="M89 0h103v30H89z"/></g>
+  <g fill="none" stroke="#c8ed81" stroke-width="1.2"><circle cx="16" cy="15" r="7"/><ellipse cx="16" cy="15" rx="3" ry="7"/><path d="M9 15h14"/></g>
+  <g fill="#fff" font-family="Arial,Helvetica,sans-serif" font-size="12"><text x="32" y="19">Website</text><text x="102" y="19" font-weight="600">jevrl.com ↗</text></g>
+</svg>

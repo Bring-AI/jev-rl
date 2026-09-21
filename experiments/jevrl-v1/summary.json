@@ -1,0 +1,488 @@
+{
+  "tasks": {
+    "acrobot": {
+      "jev": {
+        "runs": [
+          {
+            "seed": 19,
+            "return": -443.87,
+            "success": 0.32,
+            "steps": 120000,
+            "episodes": 841,
+            "duration_seconds": 91.277
+          },
+          {
+            "seed": 42,
+            "return": -101.22,
+            "success": 1.0,
+            "steps": 120000,
+            "episodes": 822,
+            "duration_seconds": 86.308
+          },
+          {
+            "seed": 7,
+            "return": -87.65,
+            "success": 1.0,
+            "steps": 120000,
+            "episodes": 831,
+            "duration_seconds": 83.827
+          }
+        ],
+        "return_mean": -210.91333333333333,
+        "return_sd": 201.86045336651094,
+        "success_mean": 0.7733333333333334,
+        "success_sd": 0.39259818304894556
+      },
+      "native": {
+        "runs": [
+          {
+            "seed": 19,
+            "return": -500.0,
+            "success": 0.0,
+            "steps": 120000,
+            "episodes": 442,
+            "duration_seconds": 96.077
+          },
+          {
+            "seed": 42,
+            "return": -500.0,
+            "success": 0.0,
+            "steps": 120000,
+            "episodes": 524,
+            "duration_seconds": 103.125
+          },
+          {
+            "seed": 7,
+            "return": -183.23,
+            "success": 0.9,
+            "steps": 120000,
+            "episodes": 426,
+            "duration_seconds": 92.913
+          }
+        ],
+        "return_mean": -394.41,
+        "return_sd": 182.88724477119777,
+        "success_mean": 0.3,
+        "success_sd": 0.5196152422706632
+      },
+      "rules": {
+        "runs": [
+          {
+            "seed": 19,
+            "return": -443.87,
+            "success": 0.32,
+            "steps": 120000,
+            "episodes": 841,
+            "duration_seconds": 96.049
+          },
+          {
+            "seed": 42,
+            "return": -101.22,
+            "success": 1.0,
+            "steps": 120000,
+            "episodes": 822,
+            "duration_seconds": 88.019
+          },
+          {
+            "seed": 7,
+            "return": -87.65,
+            "success": 1.0,
+            "steps": 120000,
+            "episodes": 831,
+            "duration_seconds": 82.936
+          }
+        ],
+        "return_mean": -210.91333333333333,
+        "return_sd": 201.86045336651094,
+        "success_mean": 0.7733333333333334,
+        "success_sd": 0.39259818304894556
+      },
+      "random": {
+        "return_mean": -497.91,
+        "success_mean": 0.03
+      }
+    },
+    "cartpole": {
+      "jev": {
+        "runs": [
+          {
+            "seed": 19,
+            "return": 500.0,
+            "success": 1.0,
+            "steps": 60000,
+            "episodes": 517,
+            "duration_seconds": 47.061
+          },
+          {
+            "seed": 42,
+            "return": 500.0,
+            "success": 1.0,
+            "steps": 60000,
+            "episodes": 499,
+            "duration_seconds": 44.821
+          },
+          {
+            "seed": 7,
+            "return": 500.0,
+            "success": 1.0,
+            "steps": 60000,
+            "episodes": 488,
+            "duration_seconds": 47.975
+          }
+        ],
+        "return_mean": 500.0,
+        "return_sd": 0.0,
+        "success_mean": 1.0,
+        "success_sd": 0.0
+      },
+      "native": {
+        "runs": [
+          {
+            "seed": 19,
+            "return": 137.37,
+            "success": 0.0,
+            "steps": 60000,
+            "episodes": 993,
+            "duration_seconds": 36.037
+          },
+          {
+            "seed": 42,
+            "return": 116.97,
+            "success": 0.0,
+            "steps": 60000,
+            "episodes": 926,
+            "duration_seconds": 34.099
+          },
+          {
+            "seed": 7,
+            "return": 172.16,
+            "success": 0.0,
+            "steps": 60000,
+            "episodes": 902,
+            "duration_seconds": 34.151
+          }
+        ],
+        "return_mean": 142.16666666666666,
+        "return_sd": 27.90591394907777,
+        "success_mean": 0.0,
+        "success_sd": 0.0
+      },
+      "rules": {
+        "runs": [
+          {
+            "seed": 19,
+            "return": 500.0,
+            "success": 1.0,
+            "steps": 60000,
+            "episodes": 515,
+            "duration_seconds": 46.276
+          },
+          {
+            "seed": 42,
+            "return": 425.16,
+            "success": 0.32,
+            "steps": 60000,
+            "episodes": 517,
+            "duration_seconds": 44.172
+          },
+          {
+            "seed": 7,
+            "return": 499.72,
+            "success": 0.99,
+            "steps": 60000,
+            "episodes": 486,
+            "duration_seconds": 44.491
+          }
+        ],
+        "return_mean": 474.96000000000004,
+        "return_sd": 43.12829233809286,
+        "success_mean": 0.77,
+        "success_sd": 0.38974350539810154
+      },
+      "random": {
+        "return_mean": 21.33,
+        "success_mean": 0.0
+      }
+    },
+    "frozenlake": {
+      "jev": {
+        "runs": [
+          {
+            "seed": 19,
+            "return": 0.73,
+            "success": 0.73,
+            "steps": 60000,
+            "episodes": 3164,
+            "duration_seconds": 35.818
+          },
+          {
+            "seed": 42,
+            "return": 0.73,
+            "success": 0.73,
+            "steps": 60000,
+            "episodes": 3219,
+            "duration_seconds": 36.373
+          },
+          {
+            "seed": 7,
+            "return": 0.69,
+            "success": 0.69,
+            "steps": 60000,
+            "episodes": 3131,
+            "duration_seconds": 36.538
+          }
+        ],
+        "return_mean": 0.7166666666666667,
+        "return_sd": 0.023094010767585053,
+        "success_mean": 0.7166666666666667,
+        "success_sd": 0.023094010767585053
+      },
+      "native": {
+        "runs": [
+          {
+            "seed": 19,
+            "return": 0.69,
+            "success": 0.69,
+            "steps": 60000,
+            "episodes": 3319,
+            "duration_seconds": 33.75
+          },
+          {
+            "seed": 42,
+            "return": 0.69,
+            "success": 0.69,
+            "steps": 60000,
+            "episodes": 3387,
+            "duration_seconds": 35.637
+          },
+          {
+            "seed": 7,
+            "return": 0.69,
+            "success": 0.69,
+            "steps": 60000,
+            "episodes": 3392,
+            "duration_seconds": 34.358
+          }
+        ],
+        "return_mean": 0.69,
+        "return_sd": 0.0,
+        "success_mean": 0.69,
+        "success_sd": 0.0
+      },
+      "rules": {
+        "runs": [
+          {
+            "seed": 19,
+            "return": 0.69,
+            "success": 0.69,
+            "steps": 60000,
+            "episodes": 3177,
+            "duration_seconds": 37.285
+          },
+          {
+            "seed": 42,
+            "return": 0.73,
+            "success": 0.73,
+            "steps": 60000,
+            "episodes": 3260,
+            "duration_seconds": 35.665
+          },
+          {
+            "seed": 7,
+            "return": 0.73,
+            "success": 0.73,
+            "steps": 60000,
+            "episodes": 3173,
+            "duration_seconds": 37.286
+          }
+        ],
+        "return_mean": 0.7166666666666667,
+        "return_sd": 0.023094010767585053,
+        "success_mean": 0.7166666666666667,
+        "success_sd": 0.023094010767585053
+      },
+      "random": {
+        "return_mean": 0.01,
+        "success_mean": 0.01
+      }
+    },
+    "mountaincar": {
+      "jev": {
+        "runs": [
+          {
+            "seed": 19,
+            "return": -154.02,
+            "success": 0.84,
+            "steps": 120000,
+            "episodes": 743,
+            "duration_seconds": 74.425
+          },
+          {
+            "seed": 42,
+            "return": -151.78,
+            "success": 1.0,
+            "steps": 120000,
+            "episodes": 772,
+            "duration_seconds": 72.961
+          },
+          {
+            "seed": 7,
+            "return": -136.92,
+            "success": 1.0,
+            "steps": 120000,
+            "episodes": 753,
+            "duration_seconds": 78.396
+          }
+        ],
+        "return_mean": -147.57333333333335,
+        "return_sd": 9.293790041384277,
+        "success_mean": 0.9466666666666667,
+        "success_sd": 0.09237604307034013
+      },
+      "native": {
+        "runs": [
+          {
+            "seed": 19,
+            "return": -200.0,
+            "success": 0.0,
+            "steps": 120000,
+            "episodes": 604,
+            "duration_seconds": 73.019
+          },
+          {
+            "seed": 42,
+            "return": -200.0,
+            "success": 0.0,
+            "steps": 120000,
+            "episodes": 600,
+            "duration_seconds": 73.931
+          },
+          {
+            "seed": 7,
+            "return": -200.0,
+            "success": 0.0,
+            "steps": 120000,
+            "episodes": 600,
+            "duration_seconds": 70.229
+          }
+        ],
+        "return_mean": -200.0,
+        "return_sd": 0.0,
+        "success_mean": 0.0,
+        "success_sd": 0.0
+      },
+      "rules": {
+        "runs": [
+          {
+            "seed": 19,
+            "return": -154.02,
+            "success": 0.84,
+            "steps": 120000,
+            "episodes": 743,
+            "duration_seconds": 73.843
+          },
+          {
+            "seed": 42,
+            "return": -151.78,
+            "success": 1.0,
+            "steps": 120000,
+            "episodes": 772,
+            "duration_seconds": 76.683
+          },
+          {
+            "seed": 7,
+            "return": -136.92,
+            "success": 1.0,
+            "steps": 120000,
+            "episodes": 753,
+            "duration_seconds": 73.374
+          }
+        ],
+        "return_mean": -147.57333333333335,
+        "return_sd": 9.293790041384277,
+        "success_mean": 0.9466666666666667,
+        "success_sd": 0.09237604307034013
+      },
+      "random": {
+        "return_mean": -200.0,
+        "success_mean": 0.0
+      }
+    }
+  },
+  "cache": {
+    "cartpole": {
+      "answers": 20,
+      "reward_mae": 0.0249,
+      "reward_max_error": 0.09750000000000003,
+      "argmax_rule_agreement": 1.0,
+      "usage": {
+        "api_calls": 20,
+        "input_tokens": 9188,
+        "output_tokens": 340,
+        "cost_usd": 0.00038589600000000005
+      },
+      "cache_sha256": "062d59f666601d7fedba90f29ccdb1a0c43198512226d3da949ad2f6b159ae6e",
+      "served_models": [
+        "typesafe/jev-1.13-20260917"
+      ]
+    },
+    "mountaincar": {
+      "answers": 50,
+      "reward_mae": 0.0,
+      "reward_max_error": 0.0,
+      "argmax_rule_agreement": 1.0,
+      "usage": {
+        "api_calls": 50,
+        "input_tokens": 22320,
+        "output_tokens": 850,
+        "cost_usd": 0.0009374400000000009
+      },
+      "cache_sha256": "fb7f04fe22b83aa47c7bff34cdebc9be979ad98a84dbc7b1185a42362251fac1",
+      "served_models": [
+        "typesafe/jev-1.13-20260917"
+      ]
+    },
+    "acrobot": {
+      "answers": 50,
+      "reward_mae": 0.0006360000000000032,
+      "reward_max_error": 0.010600000000000054,
+      "argmax_rule_agreement": 1.0,
+      "usage": {
+        "api_calls": 50,
+        "input_tokens": 22220,
+        "output_tokens": 850,
+        "cost_usd": 0.0009332400000000007
+      },
+      "cache_sha256": "53b41e90813db9fce042bb5b8bba25b3731ec966be090f29fb8086dd9bbee0cc",
+      "served_models": [
+        "typesafe/jev-1.13-20260917"
+      ]
+    },
+    "frozenlake": {
+      "answers": 9,
+      "reward_mae": 0.4255888888888889,
+      "reward_max_error": 1.0472,
+      "argmax_rule_agreement": 0.5555555555555556,
+      "usage": {
+        "api_calls": 9,
+        "input_tokens": 3651,
+        "output_tokens": 153,
+        "cost_usd": 0.000153342
+      },
+      "cache_sha256": "1462cc06657c96739a26b16b029cf52eea9addaf1ce28239f0331580dc5a3d76",
+      "served_models": [
+        "typesafe/jev-1.13-20260917"
+      ]
+    }
+  },
+  "total_training_steps": 3240000,
+  "training_runs": 36,
+  "training_seeds": [
+    7,
+    19,
+    42
+  ],
+  "note": "SD is between 3 trained policies; 100 test episodes per policy, not 300 independent training seeds.",
+  "cost_note": "Recorded cache-construction usage; excludes exploratory diagnostic requests and earlier Key Quest runs.",
+  "random_policy_rng": "NumPy SeedSequence([environment_seed, 0x4A455652]); independent action stream."
+}

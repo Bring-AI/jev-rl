@@ -1,0 +1,12 @@
+.git
+.venv
+.env
+.env.*
+runs
+dist
+__pycache__
+.pytest_cache
+.ruff_cache
+openrouter_key
+*_key
+*.pem

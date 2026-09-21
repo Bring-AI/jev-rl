@@ -1,0 +1,270 @@
+{
+  "provider": "jev",
+  "training_seed": 7,
+  "replay_seed": 10000,
+  "stages": [
+    "untrained",
+    "10k",
+    "30k",
+    "final"
+  ],
+  "tasks": [
+    {
+      "slug": "cartpole",
+      "name": "CartPole",
+      "env_id": "CartPole-v1",
+      "horizon": 500,
+      "steps": 60000,
+      "objective": "Balance the pole for 500 steps.",
+      "success_definition": "Survive all 500 steps without termination.",
+      "actions": [
+        "Push left",
+        "Push right"
+      ]
+    },
+    {
+      "slug": "mountaincar",
+      "name": "MountainCar",
+      "env_id": "MountainCar-v0",
+      "horizon": 200,
+      "steps": 120000,
+      "objective": "Build momentum and reach the flag on the right hill.",
+      "success_definition": "Reach position >= 0.5 within 200 steps.",
+      "actions": [
+        "Left",
+        "Coast",
+        "Right"
+      ]
+    },
+    {
+      "slug": "acrobot",
+      "name": "Acrobot",
+      "env_id": "Acrobot-v1",
+      "horizon": 500,
+      "steps": 120000,
+      "objective": "Swing the two-link pendulum above the target height.",
+      "success_definition": "Reach the Gymnasium terminal height within 500 steps.",
+      "actions": [
+        "Negative torque",
+        "No torque",
+        "Positive torque"
+      ]
+    },
+    {
+      "slug": "frozenlake",
+      "name": "FrozenLake",
+      "env_id": "FrozenLake-v1",
+      "horizon": 100,
+      "steps": 60000,
+      "objective": "Cross a slippery frozen lake without falling into a hole.",
+      "success_definition": "Reach goal tile 15 on the standard slippery 4x4 map within 100 steps.",
+      "actions": [
+        "Left",
+        "Down",
+        "Right",
+        "Up"
+      ]
+    }
+  ],
+  "note": "Complete fixed rollouts, time-compressed. Actual observations and outcomes are verified against Gymnasium.",
+  "source_sha256": {
+    "cartpole-jev-7.json": "672b645d75359d8be4d528b135c06f2b3ce8f8ebc5e31d9feef18ffa7b5ab71c",
+    "mountaincar-jev-7.json": "ff4666c260cb7e5fb4a3e6e93a7cc10e2686bbf38795c78358479dabd8982df0",
+    "acrobot-jev-7.json": "7030bdb6a544b1d0bec3d98340bdb25a0254bd249c9641f1098a6589e0f0c69d",
+    "frozenlake-jev-7.json": "91c6adcf1b2f61aa64609f0c4ba427424dcb3b7bd1287243509fa2b928bc3871"
+  },
+  "entries": [
+    {
+      "task": "cartpole",
+      "stage": "untrained",
+      "training_steps": 0,
+      "gif": "cartpole-untrained.gif",
+      "poster": "cartpole-untrained.png",
+      "frames": 10,
+      "replay_steps": 9,
+      "success": false,
+      "native_return": 9.0,
+      "duration_ms": 3120
+    },
+    {
+      "task": "cartpole",
+      "stage": "10k",
+      "training_steps": 10000,
+      "gif": "cartpole-10k.gif",
+      "poster": "cartpole-10k.png",
+      "frames": 108,
+      "replay_steps": 319,
+      "success": false,
+      "native_return": 319.0,
+      "duration_ms": 8990
+    },
+    {
+      "task": "cartpole",
+      "stage": "30k",
+      "training_steps": 30000,
+      "gif": "cartpole-30k.gif",
+      "poster": "cartpole-30k.png",
+      "frames": 88,
+      "replay_steps": 261,
+      "success": false,
+      "native_return": 261.0,
+      "duration_ms": 9330
+    },
+    {
+      "task": "cartpole",
+      "stage": "final",
+      "training_steps": 60000,
+      "gif": "cartpole-final.gif",
+      "poster": "cartpole-final.png",
+      "frames": 101,
+      "replay_steps": 500,
+      "success": true,
+      "native_return": 500.0,
+      "duration_ms": 9500
+    },
+    {
+      "task": "mountaincar",
+      "stage": "untrained",
+      "training_steps": 0,
+      "gif": "mountaincar-untrained.gif",
+      "poster": "mountaincar-untrained.png",
+      "frames": 101,
+      "replay_steps": 200,
+      "success": false,
+      "native_return": -200.0,
+      "duration_ms": 9500
+    },
+    {
+      "task": "mountaincar",
+      "stage": "10k",
+      "training_steps": 10000,
+      "gif": "mountaincar-10k.gif",
+      "poster": "mountaincar-10k.png",
+      "frames": 65,
+      "replay_steps": 127,
+      "success": true,
+      "native_return": -127.0,
+      "duration_ms": 9180
+    },
+    {
+      "task": "mountaincar",
+      "stage": "30k",
+      "training_steps": 30000,
+      "gif": "mountaincar-30k.gif",
+      "poster": "mountaincar-30k.png",
+      "frames": 75,
+      "replay_steps": 148,
+      "success": true,
+      "native_return": -148.0,
+      "duration_ms": 9640
+    },
+    {
+      "task": "mountaincar",
+      "stage": "final",
+      "training_steps": 120000,
+      "gif": "mountaincar-final.gif",
+      "poster": "mountaincar-final.png",
+      "frames": 83,
+      "replay_steps": 163,
+      "success": true,
+      "native_return": -163.0,
+      "duration_ms": 9700
+    },
+    {
+      "task": "acrobot",
+      "stage": "untrained",
+      "training_steps": 0,
+      "gif": "acrobot-untrained.gif",
+      "poster": "acrobot-untrained.png",
+      "frames": 101,
+      "replay_steps": 500,
+      "success": false,
+      "native_return": -500.0,
+      "duration_ms": 9500
+    },
+    {
+      "task": "acrobot",
+      "stage": "10k",
+      "training_steps": 10000,
+      "gif": "acrobot-10k.gif",
+      "poster": "acrobot-10k.png",
+      "frames": 97,
+      "replay_steps": 192,
+      "success": true,
+      "native_return": -191.0,
+      "duration_ms": 9180
+    },
+    {
+      "task": "acrobot",
+      "stage": "30k",
+      "training_steps": 30000,
+      "gif": "acrobot-30k.gif",
+      "poster": "acrobot-30k.png",
+      "frames": 101,
+      "replay_steps": 500,
+      "success": false,
+      "native_return": -500.0,
+      "duration_ms": 9500
+    },
+    {
+      "task": "acrobot",
+      "stage": "final",
+      "training_steps": 120000,
+      "gif": "acrobot-final.gif",
+      "poster": "acrobot-final.png",
+      "frames": 77,
+      "replay_steps": 76,
+      "success": true,
+      "native_return": -75.0,
+      "duration_ms": 9100
+    },
+    {
+      "task": "frozenlake",
+      "stage": "untrained",
+      "training_steps": 0,
+      "gif": "frozenlake-untrained.gif",
+      "poster": "frozenlake-untrained.png",
+      "frames": 7,
+      "replay_steps": 6,
+      "success": false,
+      "native_return": 0.0,
+      "duration_ms": 2580
+    },
+    {
+      "task": "frozenlake",
+      "stage": "10k",
+      "training_steps": 10000,
+      "gif": "frozenlake-10k.gif",
+      "poster": "frozenlake-10k.png",
+      "frames": 101,
+      "replay_steps": 100,
+      "success": false,
+      "native_return": 0.0,
+      "duration_ms": 9500
+    },
+    {
+      "task": "frozenlake",
+      "stage": "30k",
+      "training_steps": 30000,
+      "gif": "frozenlake-30k.gif",
+      "poster": "frozenlake-30k.png",
+      "frames": 28,
+      "replay_steps": 27,
+      "success": true,
+      "native_return": 1.0,
+      "duration_ms": 6360
+    },
+    {
+      "task": "frozenlake",
+      "stage": "final",
+      "training_steps": 60000,
+      "gif": "frozenlake-final.gif",
+      "poster": "frozenlake-final.png",
+      "frames": 28,
+      "replay_steps": 27,
+      "success": true,
+      "native_return": 1.0,
+      "duration_ms": 6360
+    }
+  ]
+}
